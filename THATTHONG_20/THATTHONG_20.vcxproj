@@ -141,8 +141,14 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CheckForm.resx">
+      <DependentUpon>CheckForm.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginFormThatthong20.resx">
       <DependentUpon>LoginFormThatthong20.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

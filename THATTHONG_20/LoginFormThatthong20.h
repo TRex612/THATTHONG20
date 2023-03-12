@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 namespace THATTHONG20 {
 
@@ -34,6 +34,9 @@ namespace THATTHONG20 {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Button^ button1;
+	protected:
+	private: System::Windows::Forms::Button^ Checkbonton;
 
 	protected:
 
@@ -50,13 +53,50 @@ namespace THATTHONG20 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->Checkbonton = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
+			// 
+			// button1
+			// 
+			this->button1->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->button1->BackColor = System::Drawing::Color::OldLace;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Angsana New", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button1->Location = System::Drawing::Point(361, 215);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(463, 107);
+			this->button1->TabIndex = 5;
+			this->button1->Text = L"จัดส่งพัสดุ";
+			this->button1->UseVisualStyleBackColor = false;
+			this->button1->UseWaitCursor = true;
+			// 
+			// Checkbonton
+			// 
+			this->Checkbonton->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->Checkbonton->BackColor = System::Drawing::Color::OldLace;
+			this->Checkbonton->Font = (gcnew System::Drawing::Font(L"Angsana New", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Checkbonton->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->Checkbonton->Location = System::Drawing::Point(361, 381);
+			this->Checkbonton->Margin = System::Windows::Forms::Padding(4);
+			this->Checkbonton->Name = L"Checkbonton";
+			this->Checkbonton->Size = System::Drawing::Size(463, 107);
+			this->Checkbonton->TabIndex = 4;
+			this->Checkbonton->Text = L"ตรวจสอบพัสดุ";
+			this->Checkbonton->UseVisualStyleBackColor = false;
 			// 
 			// MainFormThatthong20
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(653, 543);
+			this->ClientSize = System::Drawing::Size(1185, 703);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->Checkbonton);
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->MinimumSize = System::Drawing::Size(1203, 750);
 			this->Name = L"MainFormThatthong20";
 			this->Text = L"MainFormThatthong20";
 			this->ResumeLayout(false);
