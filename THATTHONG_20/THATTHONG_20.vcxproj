@@ -121,16 +121,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MainFormThatthong20.cpp" />
+    <ClCompile Include="CheckForm.cpp" />
+    <ClCompile Include="LoginFormThatthong20.cpp" />
+    <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="RegisForm.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MainFormThatthong20.h">
+    <ClInclude Include="CheckForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="LoginFormThatthong20.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RegisForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MainFormThatthong20.resx">
-      <DependentUpon>MainFormThatthong20.h</DependentUpon>
+    <EmbeddedResource Include="LoginFormThatthong20.resx">
+      <DependentUpon>LoginFormThatthong20.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
