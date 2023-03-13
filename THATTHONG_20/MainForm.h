@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 namespace THATTHONG20 {
 
@@ -10,12 +10,12 @@ namespace THATTHONG20 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Summary for MyForm
+	/// Summary for MainFormThatthong20
 	/// </summary>
-	public ref class MyForm : public System::Windows::Forms::Form
+	public ref class MainFormThatthong20 : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm(void)
+		MainFormThatthong20(void)
 		{
 			InitializeComponent();
 			//
@@ -27,21 +27,18 @@ namespace THATTHONG20 {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~MyForm()
+		~MainFormThatthong20()
 		{
 			if (components)
 			{
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^ PASSWORD;
+	private: System::Windows::Forms::Button^ button1;
 	protected:
-	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Label^ label2;
-	private: System::Windows::Forms::Button^ Cancellogin;
-	private: System::Windows::Forms::Button^ OKlogin;
-	private: System::Windows::Forms::TextBox^ Passlogin;
-	private: System::Windows::Forms::TextBox^ IDlogin;
+	private: System::Windows::Forms::Button^ Checkbonton;
+
+	protected:
 
 	private:
 		/// <summary>
@@ -56,120 +53,57 @@ namespace THATTHONG20 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->PASSWORD = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->Cancellogin = (gcnew System::Windows::Forms::Button());
-			this->OKlogin = (gcnew System::Windows::Forms::Button());
-			this->Passlogin = (gcnew System::Windows::Forms::TextBox());
-			this->IDlogin = (gcnew System::Windows::Forms::TextBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->Checkbonton = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
-			// PASSWORD
+			// button1
 			// 
-			this->PASSWORD->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom));
-			this->PASSWORD->AutoSize = true;
-			this->PASSWORD->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button1->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->button1->BackColor = System::Drawing::Color::OldLace;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Angsana New", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->PASSWORD->Location = System::Drawing::Point(165, 371);
-			this->PASSWORD->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->PASSWORD->Name = L"PASSWORD";
-			this->PASSWORD->Size = System::Drawing::Size(193, 36);
-			this->PASSWORD->TabIndex = 17;
-			this->PASSWORD->Text = L"PASSWORD";
+			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button1->Location = System::Drawing::Point(361, 215);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(463, 107);
+			this->button1->TabIndex = 5;
+			this->button1->Text = L"จัดส่งพัสดุ";
+			this->button1->UseVisualStyleBackColor = false;
+			this->button1->UseWaitCursor = true;
 			// 
-			// label3
+			// Checkbonton
 			// 
-			this->label3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom));
-			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Checkbonton->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->Checkbonton->BackColor = System::Drawing::Color::OldLace;
+			this->Checkbonton->Font = (gcnew System::Drawing::Font(L"Angsana New", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(259, 270);
-			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(113, 36);
-			this->label3->TabIndex = 16;
-			this->label3->Text = L"NAME ";
+			this->Checkbonton->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->Checkbonton->Location = System::Drawing::Point(361, 381);
+			this->Checkbonton->Margin = System::Windows::Forms::Padding(4);
+			this->Checkbonton->Name = L"Checkbonton";
+			this->Checkbonton->Size = System::Drawing::Size(463, 107);
+			this->Checkbonton->TabIndex = 4;
+			this->Checkbonton->Text = L"ตรวจสอบพัสดุ";
+			this->Checkbonton->UseVisualStyleBackColor = false;
 			// 
-			// label2
-			// 
-			this->label2->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Tahoma", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(479, 103);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(182, 57);
-			this->label2->TabIndex = 15;
-			this->label2->Text = L"LOGIN";
-			this->label2->TextAlign = System::Drawing::ContentAlignment::TopCenter;
-			// 
-			// Cancellogin
-			// 
-			this->Cancellogin->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->Cancellogin->Location = System::Drawing::Point(661, 511);
-			this->Cancellogin->Margin = System::Windows::Forms::Padding(4);
-			this->Cancellogin->Name = L"Cancellogin";
-			this->Cancellogin->Size = System::Drawing::Size(213, 89);
-			this->Cancellogin->TabIndex = 14;
-			this->Cancellogin->Text = L"Cancel";
-			this->Cancellogin->UseVisualStyleBackColor = true;
-			// 
-			// OKlogin
-			// 
-			this->OKlogin->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->OKlogin->Location = System::Drawing::Point(327, 511);
-			this->OKlogin->Margin = System::Windows::Forms::Padding(4);
-			this->OKlogin->Name = L"OKlogin";
-			this->OKlogin->Size = System::Drawing::Size(213, 89);
-			this->OKlogin->TabIndex = 12;
-			this->OKlogin->Text = L"Login";
-			this->OKlogin->UseVisualStyleBackColor = true;
-			// 
-			// Passlogin
-			// 
-			this->Passlogin->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom));
-			this->Passlogin->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Passlogin->Location = System::Drawing::Point(477, 368);
-			this->Passlogin->Margin = System::Windows::Forms::Padding(4);
-			this->Passlogin->Name = L"Passlogin";
-			this->Passlogin->PasswordChar = '*';
-			this->Passlogin->Size = System::Drawing::Size(543, 38);
-			this->Passlogin->TabIndex = 13;
-			this->Passlogin->UseSystemPasswordChar = true;
-			// 
-			// IDlogin
-			// 
-			this->IDlogin->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom));
-			this->IDlogin->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->IDlogin->Location = System::Drawing::Point(477, 268);
-			this->IDlogin->Margin = System::Windows::Forms::Padding(4);
-			this->IDlogin->Name = L"IDlogin";
-			this->IDlogin->Size = System::Drawing::Size(543, 38);
-			this->IDlogin->TabIndex = 11;
-			// 
-			// MyForm
+			// MainFormThatthong20
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1185, 703);
-			this->Controls->Add(this->PASSWORD);
-			this->Controls->Add(this->label3);
-			this->Controls->Add(this->label2);
-			this->Controls->Add(this->Cancellogin);
-			this->Controls->Add(this->OKlogin);
-			this->Controls->Add(this->Passlogin);
-			this->Controls->Add(this->IDlogin);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->Checkbonton);
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->MinimumSize = System::Drawing::Size(1203, 750);
-			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->Name = L"MainFormThatthong20";
+			this->Text = L"MainFormThatthong20";
 			this->ResumeLayout(false);
-			this->PerformLayout();
 
 		}
 #pragma endregion
+	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
 	};
 }

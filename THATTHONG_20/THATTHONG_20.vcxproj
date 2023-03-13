@@ -130,10 +130,10 @@
     <ClInclude Include="CheckForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="LoginFormThatthong20.h">
+    <ClInclude Include="MainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="MainForm.h">
+    <ClInclude Include="LoginForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="RegisForm.h">
@@ -144,11 +144,11 @@
     <EmbeddedResource Include="CheckForm.resx">
       <DependentUpon>CheckForm.h</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginFormThatthong20.resx">
-      <DependentUpon>LoginFormThatthong20.h</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegisForm.resx">
       <DependentUpon>RegisForm.h</DependentUpon>
