@@ -244,10 +244,10 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->button1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.Image")));
 			this->button1->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->button1->Location = System::Drawing::Point(28, 589);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button1->Location = System::Drawing::Point(37, 725);
+			this->button1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(44, 50);
+			this->button1->Size = System::Drawing::Size(59, 62);
 			this->button1->TabIndex = 151;
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &RegisForm::button1_Click);
@@ -256,10 +256,10 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->coco->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->coco->Location = System::Drawing::Point(472, 457);
-			this->coco->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->coco->Location = System::Drawing::Point(629, 562);
+			this->coco->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->coco->Name = L"coco";
-			this->coco->Size = System::Drawing::Size(79, 37);
+			this->coco->Size = System::Drawing::Size(105, 46);
 			this->coco->TabIndex = 148;
 			this->coco->Text = L"Eco-post";
 			this->coco->UseVisualStyleBackColor = true;
@@ -270,10 +270,10 @@ private: System::Windows::Forms::Label^ label21;
 			this->cf->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->cf->ForeColor = System::Drawing::Color::Black;
-			this->cf->Location = System::Drawing::Point(1000, 589);
-			this->cf->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->cf->Location = System::Drawing::Point(1333, 725);
+			this->cf->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->cf->Name = L"cf";
-			this->cf->Size = System::Drawing::Size(64, 37);
+			this->cf->Size = System::Drawing::Size(85, 46);
 			this->cf->TabIndex = 127;
 			this->cf->Text = L"confirm";
 			this->cf->UseVisualStyleBackColor = false;
@@ -284,10 +284,10 @@ private: System::Windows::Forms::Label^ label21;
 			this->re->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->re->ForeColor = System::Drawing::Color::Black;
-			this->re->Location = System::Drawing::Point(14, 124);
-			this->re->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->re->Location = System::Drawing::Point(19, 153);
+			this->re->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->re->Name = L"re";
-			this->re->Size = System::Drawing::Size(64, 37);
+			this->re->Size = System::Drawing::Size(85, 46);
 			this->re->TabIndex = 126;
 			this->re->Text = L"refrech";
 			this->re->UseVisualStyleBackColor = false;
@@ -300,13 +300,14 @@ private: System::Windows::Forms::Label^ label21;
 			this->clear->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->clear->ForeColor = System::Drawing::Color::Black;
-			this->clear->Location = System::Drawing::Point(931, 589);
-			this->clear->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->clear->Location = System::Drawing::Point(1241, 725);
+			this->clear->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->clear->Name = L"clear";
-			this->clear->Size = System::Drawing::Size(60, 37);
+			this->clear->Size = System::Drawing::Size(80, 46);
 			this->clear->TabIndex = 125;
 			this->clear->Text = L"clear";
 			this->clear->UseVisualStyleBackColor = false;
+			this->clear->Click += gcnew System::EventHandler(this, &RegisForm::clear_Click);
 			// 
 			// sd
 			// 
@@ -314,10 +315,9 @@ private: System::Windows::Forms::Label^ label21;
 			this->sd->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->sd->ForeColor = System::Drawing::Color::Black;
-			this->sd->Location = System::Drawing::Point(59, 32);
-			this->sd->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->sd->Location = System::Drawing::Point(79, 39);
 			this->sd->Name = L"sd";
-			this->sd->Size = System::Drawing::Size(45, 26);
+			this->sd->Size = System::Drawing::Size(57, 32);
 			this->sd->TabIndex = 124;
 			this->sd->Text = L"ผู้ส่ง";
 			// 
@@ -326,10 +326,10 @@ private: System::Windows::Forms::Label^ label21;
 			this->calcal->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->calcal->ForeColor = System::Drawing::Color::Black;
-			this->calcal->Location = System::Drawing::Point(65, 514);
-			this->calcal->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->calcal->Location = System::Drawing::Point(87, 633);
+			this->calcal->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->calcal->Name = L"calcal";
-			this->calcal->Size = System::Drawing::Size(75, 37);
+			this->calcal->Size = System::Drawing::Size(100, 46);
 			this->calcal->TabIndex = 123;
 			this->calcal->Text = L"คำนวณ";
 			this->calcal->UseVisualStyleBackColor = true;
@@ -339,10 +339,10 @@ private: System::Windows::Forms::Label^ label21;
 			this->emem->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->emem->ForeColor = System::Drawing::Color::Black;
-			this->emem->Location = System::Drawing::Point(379, 457);
-			this->emem->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->emem->Location = System::Drawing::Point(505, 562);
+			this->emem->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->emem->Name = L"emem";
-			this->emem->Size = System::Drawing::Size(79, 37);
+			this->emem->Size = System::Drawing::Size(105, 46);
 			this->emem->TabIndex = 122;
 			this->emem->Text = L"EMS";
 			this->emem->UseVisualStyleBackColor = true;
@@ -352,10 +352,10 @@ private: System::Windows::Forms::Label^ label21;
 			this->free->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->free->ForeColor = System::Drawing::Color::Black;
-			this->free->Location = System::Drawing::Point(285, 457);
-			this->free->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->free->Location = System::Drawing::Point(380, 562);
+			this->free->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->free->Name = L"free";
-			this->free->Size = System::Drawing::Size(79, 37);
+			this->free->Size = System::Drawing::Size(105, 46);
 			this->free->TabIndex = 121;
 			this->free->Text = L"ลงทะเบียน";
 			this->free->UseVisualStyleBackColor = true;
@@ -365,20 +365,19 @@ private: System::Windows::Forms::Label^ label21;
 			this->type->AutoSize = true;
 			this->type->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->type->Location = System::Drawing::Point(284, 410);
-			this->type->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->type->Location = System::Drawing::Point(379, 505);
 			this->type->Name = L"type";
-			this->type->Size = System::Drawing::Size(128, 24);
+			this->type->Size = System::Drawing::Size(170, 29);
 			this->type->TabIndex = 120;
 			this->type->Text = L"ประเภทการจัดส่ง";
 			// 
 			// putW
 			// 
-			this->putW->Location = System::Drawing::Point(65, 457);
-			this->putW->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->putW->Location = System::Drawing::Point(87, 562);
+			this->putW->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->putW->Multiline = true;
 			this->putW->Name = L"putW";
-			this->putW->Size = System::Drawing::Size(151, 37);
+			this->putW->Size = System::Drawing::Size(200, 45);
 			this->putW->TabIndex = 119;
 			// 
 			// weight
@@ -386,20 +385,19 @@ private: System::Windows::Forms::Label^ label21;
 			this->weight->AutoSize = true;
 			this->weight->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->weight->Location = System::Drawing::Point(61, 410);
-			this->weight->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->weight->Location = System::Drawing::Point(81, 505);
 			this->weight->Name = L"weight";
-			this->weight->Size = System::Drawing::Size(158, 24);
+			this->weight->Size = System::Drawing::Size(212, 29);
 			this->weight->TabIndex = 118;
 			this->weight->Text = L"น้ำหนักจริงของสิ่งของ";
 			// 
 			// XXXX
 			// 
-			this->XXXX->Location = System::Drawing::Point(384, 324);
-			this->XXXX->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->XXXX->Location = System::Drawing::Point(512, 399);
+			this->XXXX->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->XXXX->Multiline = true;
 			this->XXXX->Name = L"XXXX";
-			this->XXXX->Size = System::Drawing::Size(148, 37);
+			this->XXXX->Size = System::Drawing::Size(196, 45);
 			this->XXXX->TabIndex = 117;
 			// 
 			// label10
@@ -407,29 +405,28 @@ private: System::Windows::Forms::Label^ label21;
 			this->label10->AutoSize = true;
 			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label10->Location = System::Drawing::Point(304, 333);
-			this->label10->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label10->Location = System::Drawing::Point(405, 410);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(85, 20);
+			this->label10->Size = System::Drawing::Size(106, 25);
 			this->label10->TabIndex = 116;
 			this->label10->Text = L"รหัสไปรษณีย์";
 			// 
 			// PVPV
 			// 
-			this->PVPV->Location = System::Drawing::Point(127, 323);
-			this->PVPV->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->PVPV->Location = System::Drawing::Point(169, 398);
+			this->PVPV->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->PVPV->Multiline = true;
 			this->PVPV->Name = L"PVPV";
-			this->PVPV->Size = System::Drawing::Size(174, 37);
+			this->PVPV->Size = System::Drawing::Size(231, 45);
 			this->PVPV->TabIndex = 115;
 			// 
 			// amam
 			// 
-			this->amam->Location = System::Drawing::Point(374, 277);
-			this->amam->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->amam->Location = System::Drawing::Point(499, 341);
+			this->amam->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->amam->Multiline = true;
 			this->amam->Name = L"amam";
-			this->amam->Size = System::Drawing::Size(151, 37);
+			this->amam->Size = System::Drawing::Size(200, 45);
 			this->amam->TabIndex = 113;
 			// 
 			// label8
@@ -437,29 +434,28 @@ private: System::Windows::Forms::Label^ label21;
 			this->label8->AutoSize = true;
 			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label8->Location = System::Drawing::Point(307, 284);
-			this->label8->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label8->Location = System::Drawing::Point(409, 350);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(75, 20);
+			this->label8->Size = System::Drawing::Size(86, 25);
 			this->label8->TabIndex = 112;
 			this->label8->Text = L"เขต/อำเภอ";
 			// 
 			// CCCC
 			// 
-			this->CCCC->Location = System::Drawing::Point(152, 275);
-			this->CCCC->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->CCCC->Location = System::Drawing::Point(203, 338);
+			this->CCCC->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->CCCC->Multiline = true;
 			this->CCCC->Name = L"CCCC";
-			this->CCCC->Size = System::Drawing::Size(151, 37);
+			this->CCCC->Size = System::Drawing::Size(200, 45);
 			this->CCCC->TabIndex = 111;
 			// 
 			// soysoy
 			// 
-			this->soysoy->Location = System::Drawing::Point(320, 228);
-			this->soysoy->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->soysoy->Location = System::Drawing::Point(427, 281);
+			this->soysoy->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->soysoy->Multiline = true;
 			this->soysoy->Name = L"soysoy";
-			this->soysoy->Size = System::Drawing::Size(143, 37);
+			this->soysoy->Size = System::Drawing::Size(189, 45);
 			this->soysoy->TabIndex = 109;
 			// 
 			// label6
@@ -467,20 +463,19 @@ private: System::Windows::Forms::Label^ label21;
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(263, 236);
-			this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label6->Location = System::Drawing::Point(351, 290);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(57, 20);
+			this->label6->Size = System::Drawing::Size(72, 25);
 			this->label6->TabIndex = 108;
 			this->label6->Text = L"หมู่/ซอย";
 			// 
 			// number
 			// 
-			this->number->Location = System::Drawing::Point(117, 228);
-			this->number->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->number->Location = System::Drawing::Point(156, 281);
+			this->number->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->number->Multiline = true;
 			this->number->Name = L"number";
-			this->number->Size = System::Drawing::Size(143, 37);
+			this->number->Size = System::Drawing::Size(189, 45);
 			this->number->TabIndex = 107;
 			// 
 			// label5
@@ -488,10 +483,9 @@ private: System::Windows::Forms::Label^ label21;
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(82, 236);
-			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label5->Location = System::Drawing::Point(109, 290);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(42, 20);
+			this->label5->Size = System::Drawing::Size(48, 25);
 			this->label5->TabIndex = 106;
 			this->label5->Text = L"เลขที่";
 			// 
@@ -500,20 +494,19 @@ private: System::Windows::Forms::Label^ label21;
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(59, 189);
-			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label4->Location = System::Drawing::Point(79, 233);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(48, 26);
+			this->label4->Size = System::Drawing::Size(59, 32);
 			this->label4->TabIndex = 105;
 			this->label4->Text = L"ที่อยู่";
 			// 
 			// CALL
 			// 
-			this->CALL->Location = System::Drawing::Point(182, 136);
-			this->CALL->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->CALL->Location = System::Drawing::Point(243, 167);
+			this->CALL->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->CALL->Multiline = true;
 			this->CALL->Name = L"CALL";
-			this->CALL->Size = System::Drawing::Size(170, 37);
+			this->CALL->Size = System::Drawing::Size(225, 45);
 			this->CALL->TabIndex = 104;
 			// 
 			// label3
@@ -521,20 +514,19 @@ private: System::Windows::Forms::Label^ label21;
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(82, 145);
-			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label3->Location = System::Drawing::Point(109, 178);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(119, 20);
+			this->label3->Size = System::Drawing::Size(139, 25);
 			this->label3->TabIndex = 103;
 			this->label3->Text = L"หมายเลขโทรศัพท์";
 			// 
 			// SNSN
 			// 
-			this->SNSN->Location = System::Drawing::Point(338, 88);
-			this->SNSN->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->SNSN->Location = System::Drawing::Point(451, 108);
+			this->SNSN->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->SNSN->Multiline = true;
 			this->SNSN->Name = L"SNSN";
-			this->SNSN->Size = System::Drawing::Size(174, 37);
+			this->SNSN->Size = System::Drawing::Size(231, 45);
 			this->SNSN->TabIndex = 102;
 			// 
 			// label2
@@ -543,21 +535,21 @@ private: System::Windows::Forms::Label^ label21;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::Black;
-			this->label2->Location = System::Drawing::Point(284, 97);
-			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label2->Location = System::Drawing::Point(379, 119);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(60, 20);
+			this->label2->Size = System::Drawing::Size(72, 25);
 			this->label2->TabIndex = 101;
 			this->label2->Text = L"นามสกุล";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// NNNN
 			// 
-			this->NNNN->Location = System::Drawing::Point(107, 87);
-			this->NNNN->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->NNNN->Multiline = true;
+			this->NNNN->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->NNNN->Location = System::Drawing::Point(142, 112);
+			this->NNNN->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->NNNN->Name = L"NNNN";
-			this->NNNN->Size = System::Drawing::Size(174, 37);
+			this->NNNN->Size = System::Drawing::Size(231, 36);
 			this->NNNN->TabIndex = 100;
 			// 
 			// label1
@@ -566,10 +558,10 @@ private: System::Windows::Forms::Label^ label21;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::Black;
-			this->label1->Location = System::Drawing::Point(82, 97);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(109, 119);
+			this->label1->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(26, 20);
+			this->label1->Size = System::Drawing::Size(32, 25);
 			this->label1->TabIndex = 99;
 			this->label1->Text = L"ชื่อ";
 			// 
@@ -585,20 +577,20 @@ private: System::Windows::Forms::Label^ label21;
 			this->pop->Controls->Add(this->re);
 			this->pop->Controls->Add(this->pc);
 			this->pop->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->pop->Location = System::Drawing::Point(596, 409);
-			this->pop->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pop->Location = System::Drawing::Point(795, 503);
+			this->pop->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pop->Name = L"pop";
 			this->pop->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->pop->Size = System::Drawing::Size(312, 177);
+			this->pop->Size = System::Drawing::Size(415, 217);
 			this->pop->TabIndex = 150;
 			// 
 			// pictureBox9
 			// 
 			this->pictureBox9->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox9.Image")));
-			this->pictureBox9->Location = System::Drawing::Point(152, 27);
-			this->pictureBox9->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox9->Location = System::Drawing::Point(203, 33);
+			this->pictureBox9->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox9->Name = L"pictureBox9";
-			this->pictureBox9->Size = System::Drawing::Size(30, 32);
+			this->pictureBox9->Size = System::Drawing::Size(40, 39);
 			this->pictureBox9->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox9->TabIndex = 199;
 			this->pictureBox9->TabStop = false;
@@ -606,10 +598,10 @@ private: System::Windows::Forms::Label^ label21;
 			// pictureBox8
 			// 
 			this->pictureBox8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.Image")));
-			this->pictureBox8->Location = System::Drawing::Point(24, 27);
-			this->pictureBox8->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox8->Location = System::Drawing::Point(32, 33);
+			this->pictureBox8->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox8->Name = L"pictureBox8";
-			this->pictureBox8->Size = System::Drawing::Size(30, 32);
+			this->pictureBox8->Size = System::Drawing::Size(40, 39);
 			this->pictureBox8->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox8->TabIndex = 199;
 			this->pictureBox8->TabStop = false;
@@ -621,10 +613,9 @@ private: System::Windows::Forms::Label^ label21;
 			this->service->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->service->ForeColor = System::Drawing::Color::White;
-			this->service->Location = System::Drawing::Point(59, 27);
-			this->service->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->service->Location = System::Drawing::Point(79, 33);
 			this->service->Name = L"service";
-			this->service->Size = System::Drawing::Size(74, 24);
+			this->service->Size = System::Drawing::Size(99, 29);
 			this->service->TabIndex = 68;
 			this->service->Text = L"ค่าบริการ";
 			// 
@@ -635,10 +626,9 @@ private: System::Windows::Forms::Label^ label21;
 			this->price->Font = (gcnew System::Drawing::Font(L"Tahoma", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->price->ForeColor = System::Drawing::Color::Black;
-			this->price->Location = System::Drawing::Point(59, 71);
-			this->price->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->price->Location = System::Drawing::Point(79, 87);
 			this->price->Name = L"price";
-			this->price->Size = System::Drawing::Size(46, 23);
+			this->price->Size = System::Drawing::Size(56, 28);
 			this->price->TabIndex = 46;
 			this->price->Text = L"xxxx";
 			// 
@@ -649,10 +639,9 @@ private: System::Windows::Forms::Label^ label21;
 			this->id->Font = (gcnew System::Drawing::Font(L"Tahoma", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->id->ForeColor = System::Drawing::Color::Black;
-			this->id->Location = System::Drawing::Point(188, 71);
-			this->id->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->id->Location = System::Drawing::Point(251, 87);
 			this->id->Name = L"id";
-			this->id->Size = System::Drawing::Size(90, 23);
+			this->id->Size = System::Drawing::Size(110, 28);
 			this->id->TabIndex = 93;
 			this->id->Text = L"ID xxxxxx";
 			// 
@@ -663,10 +652,9 @@ private: System::Windows::Forms::Label^ label21;
 			this->pc->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->pc->ForeColor = System::Drawing::Color::White;
-			this->pc->Location = System::Drawing::Point(188, 27);
-			this->pc->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->pc->Location = System::Drawing::Point(251, 33);
 			this->pc->Name = L"pc";
-			this->pc->Size = System::Drawing::Size(66, 24);
+			this->pc->Size = System::Drawing::Size(89, 29);
 			this->pc->TabIndex = 69;
 			this->pc->Text = L"เลขพัสดุ";
 			// 
@@ -677,10 +665,10 @@ private: System::Windows::Forms::Label^ label21;
 			this->pictureBox1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.BackgroundImage")));
 			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-1, 409);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox1->Location = System::Drawing::Point(-1, 503);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(1126, 262);
+			this->pictureBox1->Size = System::Drawing::Size(1501, 322);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 153;
 			this->pictureBox1->TabStop = false;
@@ -691,10 +679,10 @@ private: System::Windows::Forms::Label^ label21;
 			this->pictureBox2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
 			this->pictureBox2->Enabled = false;
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(247, 410);
-			this->pictureBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox2->Location = System::Drawing::Point(329, 505);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(34, 32);
+			this->pictureBox2->Size = System::Drawing::Size(45, 39);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox2->TabIndex = 174;
 			this->pictureBox2->TabStop = false;
@@ -703,10 +691,10 @@ private: System::Windows::Forms::Label^ label21;
 			// pictureBox3
 			// 
 			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
-			this->pictureBox3->Location = System::Drawing::Point(26, 410);
-			this->pictureBox3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox3->Location = System::Drawing::Point(35, 505);
+			this->pictureBox3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox3->Name = L"pictureBox3";
-			this->pictureBox3->Size = System::Drawing::Size(30, 32);
+			this->pictureBox3->Size = System::Drawing::Size(40, 39);
 			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox3->TabIndex = 176;
 			this->pictureBox3->TabStop = false;
@@ -714,10 +702,10 @@ private: System::Windows::Forms::Label^ label21;
 			// pictureBox4
 			// 
 			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
-			this->pictureBox4->Location = System::Drawing::Point(28, 32);
-			this->pictureBox4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox4->Location = System::Drawing::Point(37, 39);
+			this->pictureBox4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox4->Name = L"pictureBox4";
-			this->pictureBox4->Size = System::Drawing::Size(30, 32);
+			this->pictureBox4->Size = System::Drawing::Size(40, 39);
 			this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox4->TabIndex = 177;
 			this->pictureBox4->TabStop = false;
@@ -725,10 +713,10 @@ private: System::Windows::Forms::Label^ label21;
 			// pictureBox5
 			// 
 			this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
-			this->pictureBox5->Location = System::Drawing::Point(28, 187);
-			this->pictureBox5->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox5->Location = System::Drawing::Point(37, 230);
+			this->pictureBox5->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox5->Name = L"pictureBox5";
-			this->pictureBox5->Size = System::Drawing::Size(30, 32);
+			this->pictureBox5->Size = System::Drawing::Size(40, 39);
 			this->pictureBox5->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox5->TabIndex = 178;
 			this->pictureBox5->TabStop = false;
@@ -736,10 +724,10 @@ private: System::Windows::Forms::Label^ label21;
 			// pictureBox6
 			// 
 			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
-			this->pictureBox6->Location = System::Drawing::Point(596, 187);
-			this->pictureBox6->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox6->Location = System::Drawing::Point(795, 230);
+			this->pictureBox6->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox6->Name = L"pictureBox6";
-			this->pictureBox6->Size = System::Drawing::Size(30, 32);
+			this->pictureBox6->Size = System::Drawing::Size(40, 39);
 			this->pictureBox6->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox6->TabIndex = 198;
 			this->pictureBox6->TabStop = false;
@@ -747,10 +735,10 @@ private: System::Windows::Forms::Label^ label21;
 			// pictureBox7
 			// 
 			this->pictureBox7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.Image")));
-			this->pictureBox7->Location = System::Drawing::Point(596, 32);
-			this->pictureBox7->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox7->Location = System::Drawing::Point(795, 39);
+			this->pictureBox7->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox7->Name = L"pictureBox7";
-			this->pictureBox7->Size = System::Drawing::Size(30, 32);
+			this->pictureBox7->Size = System::Drawing::Size(40, 39);
 			this->pictureBox7->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox7->TabIndex = 197;
 			this->pictureBox7->TabStop = false;
@@ -761,20 +749,19 @@ private: System::Windows::Forms::Label^ label21;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label7->ForeColor = System::Drawing::Color::Black;
-			this->label7->Location = System::Drawing::Point(626, 32);
-			this->label7->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label7->Location = System::Drawing::Point(835, 39);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(45, 26);
+			this->label7->Size = System::Drawing::Size(57, 32);
 			this->label7->TabIndex = 196;
 			this->label7->Text = L"ผู้ส่ง";
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(951, 324);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox1->Location = System::Drawing::Point(1268, 399);
+			this->textBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox1->Multiline = true;
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(148, 37);
+			this->textBox1->Size = System::Drawing::Size(196, 45);
 			this->textBox1->TabIndex = 195;
 			// 
 			// label9
@@ -782,29 +769,28 @@ private: System::Windows::Forms::Label^ label21;
 			this->label9->AutoSize = true;
 			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label9->Location = System::Drawing::Point(871, 333);
-			this->label9->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label9->Location = System::Drawing::Point(1161, 410);
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(85, 20);
+			this->label9->Size = System::Drawing::Size(106, 25);
 			this->label9->TabIndex = 194;
 			this->label9->Text = L"รหัสไปรษณีย์";
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(694, 323);
-			this->textBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox2->Location = System::Drawing::Point(925, 398);
+			this->textBox2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox2->Multiline = true;
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(174, 37);
+			this->textBox2->Size = System::Drawing::Size(231, 45);
 			this->textBox2->TabIndex = 193;
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(941, 277);
-			this->textBox3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox3->Location = System::Drawing::Point(1255, 341);
+			this->textBox3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox3->Multiline = true;
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(151, 37);
+			this->textBox3->Size = System::Drawing::Size(200, 45);
 			this->textBox3->TabIndex = 192;
 			// 
 			// label11
@@ -812,29 +798,28 @@ private: System::Windows::Forms::Label^ label21;
 			this->label11->AutoSize = true;
 			this->label11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label11->Location = System::Drawing::Point(874, 284);
-			this->label11->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label11->Location = System::Drawing::Point(1165, 350);
 			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(75, 20);
+			this->label11->Size = System::Drawing::Size(86, 25);
 			this->label11->TabIndex = 191;
 			this->label11->Text = L"เขต/อำเภอ";
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(719, 275);
-			this->textBox4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox4->Location = System::Drawing::Point(959, 338);
+			this->textBox4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox4->Multiline = true;
 			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(151, 37);
+			this->textBox4->Size = System::Drawing::Size(200, 45);
 			this->textBox4->TabIndex = 190;
 			// 
 			// textBox5
 			// 
-			this->textBox5->Location = System::Drawing::Point(886, 228);
-			this->textBox5->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox5->Location = System::Drawing::Point(1181, 281);
+			this->textBox5->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox5->Multiline = true;
 			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(143, 37);
+			this->textBox5->Size = System::Drawing::Size(189, 45);
 			this->textBox5->TabIndex = 189;
 			// 
 			// label12
@@ -842,20 +827,19 @@ private: System::Windows::Forms::Label^ label21;
 			this->label12->AutoSize = true;
 			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label12->Location = System::Drawing::Point(830, 236);
-			this->label12->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label12->Location = System::Drawing::Point(1107, 290);
 			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(57, 20);
+			this->label12->Size = System::Drawing::Size(72, 25);
 			this->label12->TabIndex = 188;
 			this->label12->Text = L"หมู่/ซอย";
 			// 
 			// textBox6
 			// 
-			this->textBox6->Location = System::Drawing::Point(684, 228);
-			this->textBox6->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox6->Location = System::Drawing::Point(912, 281);
+			this->textBox6->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox6->Multiline = true;
 			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(143, 37);
+			this->textBox6->Size = System::Drawing::Size(189, 45);
 			this->textBox6->TabIndex = 187;
 			// 
 			// label13
@@ -863,10 +847,9 @@ private: System::Windows::Forms::Label^ label21;
 			this->label13->AutoSize = true;
 			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label13->Location = System::Drawing::Point(649, 236);
-			this->label13->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label13->Location = System::Drawing::Point(865, 290);
 			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(42, 20);
+			this->label13->Size = System::Drawing::Size(48, 25);
 			this->label13->TabIndex = 186;
 			this->label13->Text = L"เลขที่";
 			// 
@@ -875,20 +858,19 @@ private: System::Windows::Forms::Label^ label21;
 			this->label14->AutoSize = true;
 			this->label14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label14->Location = System::Drawing::Point(626, 189);
-			this->label14->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label14->Location = System::Drawing::Point(835, 233);
 			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(48, 26);
+			this->label14->Size = System::Drawing::Size(59, 32);
 			this->label14->TabIndex = 185;
 			this->label14->Text = L"ที่อยู่";
 			// 
 			// textBox7
 			// 
-			this->textBox7->Location = System::Drawing::Point(748, 136);
-			this->textBox7->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox7->Location = System::Drawing::Point(997, 167);
+			this->textBox7->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox7->Multiline = true;
 			this->textBox7->Name = L"textBox7";
-			this->textBox7->Size = System::Drawing::Size(170, 37);
+			this->textBox7->Size = System::Drawing::Size(225, 45);
 			this->textBox7->TabIndex = 184;
 			// 
 			// label15
@@ -896,20 +878,19 @@ private: System::Windows::Forms::Label^ label21;
 			this->label15->AutoSize = true;
 			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label15->Location = System::Drawing::Point(649, 145);
-			this->label15->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label15->Location = System::Drawing::Point(865, 178);
 			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(119, 20);
+			this->label15->Size = System::Drawing::Size(139, 25);
 			this->label15->TabIndex = 183;
 			this->label15->Text = L"หมายเลขโทรศัพท์";
 			// 
 			// textBox8
 			// 
-			this->textBox8->Location = System::Drawing::Point(904, 88);
-			this->textBox8->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox8->Location = System::Drawing::Point(1205, 108);
+			this->textBox8->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox8->Multiline = true;
 			this->textBox8->Name = L"textBox8";
-			this->textBox8->Size = System::Drawing::Size(174, 37);
+			this->textBox8->Size = System::Drawing::Size(231, 45);
 			this->textBox8->TabIndex = 182;
 			// 
 			// label16
@@ -918,21 +899,20 @@ private: System::Windows::Forms::Label^ label21;
 			this->label16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label16->ForeColor = System::Drawing::Color::Black;
-			this->label16->Location = System::Drawing::Point(851, 97);
-			this->label16->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label16->Location = System::Drawing::Point(1135, 119);
 			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(60, 20);
+			this->label16->Size = System::Drawing::Size(72, 25);
 			this->label16->TabIndex = 181;
 			this->label16->Text = L"นามสกุล";
 			this->label16->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// textBox9
 			// 
-			this->textBox9->Location = System::Drawing::Point(674, 87);
-			this->textBox9->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox9->Location = System::Drawing::Point(899, 107);
+			this->textBox9->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox9->Multiline = true;
 			this->textBox9->Name = L"textBox9";
-			this->textBox9->Size = System::Drawing::Size(174, 37);
+			this->textBox9->Size = System::Drawing::Size(231, 45);
 			this->textBox9->TabIndex = 180;
 			// 
 			// label17
@@ -941,10 +921,10 @@ private: System::Windows::Forms::Label^ label21;
 			this->label17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label17->ForeColor = System::Drawing::Color::Black;
-			this->label17->Location = System::Drawing::Point(649, 97);
-			this->label17->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label17->Location = System::Drawing::Point(865, 119);
+			this->label17->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
 			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(26, 20);
+			this->label17->Size = System::Drawing::Size(32, 25);
 			this->label17->TabIndex = 179;
 			this->label17->Text = L"ชื่อ";
 			// 
@@ -953,10 +933,9 @@ private: System::Windows::Forms::Label^ label21;
 			this->label18->AutoSize = true;
 			this->label18->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label18->Location = System::Drawing::Point(82, 284);
-			this->label18->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label18->Location = System::Drawing::Point(109, 350);
 			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(78, 20);
+			this->label18->Size = System::Drawing::Size(92, 25);
 			this->label18->TabIndex = 199;
 			this->label18->Text = L"แขวง/ตำบล";
 			// 
@@ -965,10 +944,9 @@ private: System::Windows::Forms::Label^ label21;
 			this->label19->AutoSize = true;
 			this->label19->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label19->Location = System::Drawing::Point(82, 333);
-			this->label19->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label19->Location = System::Drawing::Point(109, 410);
 			this->label19->Name = L"label19";
-			this->label19->Size = System::Drawing::Size(49, 20);
+			this->label19->Size = System::Drawing::Size(59, 25);
 			this->label19->TabIndex = 200;
 			this->label19->Text = L"จังหวัด";
 			// 
@@ -977,10 +955,9 @@ private: System::Windows::Forms::Label^ label21;
 			this->label20->AutoSize = true;
 			this->label20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label20->Location = System::Drawing::Point(649, 333);
-			this->label20->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label20->Location = System::Drawing::Point(865, 410);
 			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(49, 20);
+			this->label20->Size = System::Drawing::Size(59, 25);
 			this->label20->TabIndex = 202;
 			this->label20->Text = L"จังหวัด";
 			// 
@@ -989,19 +966,18 @@ private: System::Windows::Forms::Label^ label21;
 			this->label21->AutoSize = true;
 			this->label21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label21->Location = System::Drawing::Point(649, 284);
-			this->label21->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label21->Location = System::Drawing::Point(865, 350);
 			this->label21->Name = L"label21";
-			this->label21->Size = System::Drawing::Size(78, 20);
+			this->label21->Size = System::Drawing::Size(92, 25);
 			this->label21->TabIndex = 201;
 			this->label21->Text = L"แขวง/ตำบล";
 			// 
 			// RegisForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::PapayaWhip;
-			this->ClientSize = System::Drawing::Size(1124, 670);
+			this->ClientSize = System::Drawing::Size(1499, 825);
 			this->Controls->Add(this->label20);
 			this->Controls->Add(this->label21);
 			this->Controls->Add(this->label19);
@@ -1060,9 +1036,10 @@ private: System::Windows::Forms::Label^ label21;
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->pop);
 			this->Controls->Add(this->pictureBox1);
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"RegisForm";
 			this->Text = L"RegisForm";
+
 			this->pop->ResumeLayout(false);
 			this->pop->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->EndInit();
@@ -1087,6 +1064,9 @@ private: System::Void re_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
+}
+private: System::Void clear_Click(System::Object^ sender, System::EventArgs^ e) {
+	NNNN->Text = "";
 }
 };
 }
