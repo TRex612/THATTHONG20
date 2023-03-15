@@ -79,7 +79,7 @@ namespace THATTHONG20 {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Tahoma", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->Location = System::Drawing::Point(978, 293);
-			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button2->Margin = System::Windows::Forms::Padding(4);
 			this->button2->MinimumSize = System::Drawing::Size(120, 46);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(120, 46);
@@ -94,7 +94,7 @@ namespace THATTHONG20 {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Tahoma", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->Location = System::Drawing::Point(850, 293);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Margin = System::Windows::Forms::Padding(4);
 			this->button1->MinimumSize = System::Drawing::Size(120, 46);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(120, 46);
@@ -108,7 +108,7 @@ namespace THATTHONG20 {
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Tahoma", 21.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox1->Location = System::Drawing::Point(719, 213);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox1->Margin = System::Windows::Forms::Padding(4);
 			this->textBox1->MinimumSize = System::Drawing::Size(379, 51);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(379, 51);
@@ -161,7 +161,7 @@ namespace THATTHONG20 {
 			this->button3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->button3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.Image")));
 			this->button3->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->button3->Location = System::Drawing::Point(15, 626);
+			this->button3->Location = System::Drawing::Point(23, 622);
 			this->button3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(79, 73);
