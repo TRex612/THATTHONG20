@@ -1135,6 +1135,25 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 }
 private: System::Void clear_Click(System::Object^ sender, System::EventArgs^ e) {
 	NNNN->Text = "";
+	SNSN->Text = "";
+	CALL->Text = "";
+	number->Text = "";
+	soysoy->Text = "";
+	CCCC->Text = "";
+	amam->Text = "";
+	PVPV->Text = "";
+	XXXX->Text = "";
+
+	textBox9->Text = "";
+	textBox8->Text = "";
+	textBox7->Text = "";
+	textBox6->Text = "";
+	textBox5->Text = "";
+	textBox4->Text = "";
+	textBox3->Text = "";
+	textBox2->Text = "";
+	textBox1->Text = "";
+	putW->Text = "";
 }
 private: System::Void pictureBox1_Click_1(System::Object^ sender, System::EventArgs^ e) {
 }
