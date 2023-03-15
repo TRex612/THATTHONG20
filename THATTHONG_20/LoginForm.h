@@ -12,10 +12,10 @@ namespace THATTHONG20 {
 	/// <summary>
 	/// Summary for MyForm
 	/// </summary>
-	public ref class MyForm : public System::Windows::Forms::Form
+	public ref class LoginForm : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm(void)
+		LoginForm(void)
 		{
 			InitializeComponent();
 			//
@@ -27,7 +27,7 @@ namespace THATTHONG20 {
 		/// <summary>
 		/// Clean up any resources being used.
 		/// </summary>
-		~MyForm()
+		~LoginForm()
 		{
 			if (components)
 			{

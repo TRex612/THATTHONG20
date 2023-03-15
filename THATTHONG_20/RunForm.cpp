@@ -13,8 +13,11 @@ void main(array<String^>^ args)
 	Application::SetCompatibleTextRenderingDefault(false);
 	
 	THATTHONG20::LoginForm loginform;
+	THATTHONG20::MainFormThatthong20 mainform;
+	THATTHONG20::CheckForm checkform;
+	THATTHONG20::RegisForm regisform;
 	
 	
 	
-	Application::Run(% loginform);
+	Application::Run(% checkform);
 }
