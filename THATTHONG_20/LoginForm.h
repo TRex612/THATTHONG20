@@ -1,4 +1,5 @@
 #pragma once
+#include "MainForm.h"
 
 namespace THATTHONG20 {
 
@@ -111,6 +112,7 @@ namespace THATTHONG20 {
 			this->Cancellogin->TabIndex = 14;
 			this->Cancellogin->Text = L"Cancel";
 			this->Cancellogin->UseVisualStyleBackColor = true;
+			this->Cancellogin->Click += gcnew System::EventHandler(this, &LoginForm::Cancellogin_Click);
 			// 
 			// OKlogin
 			// 
@@ -121,6 +123,7 @@ namespace THATTHONG20 {
 			this->OKlogin->TabIndex = 12;
 			this->OKlogin->Text = L"Login";
 			this->OKlogin->UseVisualStyleBackColor = true;
+			this->OKlogin->Click += gcnew System::EventHandler(this, &LoginForm::OKlogin_Click);
 			// 
 			// Passlogin
 			// 
@@ -144,7 +147,7 @@ namespace THATTHONG20 {
 			this->IDlogin->Size = System::Drawing::Size(408, 32);
 			this->IDlogin->TabIndex = 11;
 			// 
-			// MyForm
+			// LoginForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -156,14 +159,46 @@ namespace THATTHONG20 {
 			this->Controls->Add(this->OKlogin);
 			this->Controls->Add(this->Passlogin);
 			this->Controls->Add(this->IDlogin);
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->MinimumSize = System::Drawing::Size(906, 617);
-			this->Name = L"MyForm";
+			this->Name = L"LoginForm";
 			this->Text = L"Thatthong20Login";
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
-	};
+	private: System::Void OKlogin_Click(System::Object^ sender, System::EventArgs^ e) {
+		MainFormThatthong20^ mainform = gcnew MainFormThatthong20();
+		if (IDlogin->Text=="admin20")
+		{
+			if (Passlogin->Text == "123456789") {
+
+				this->Hide();
+
+				mainform->ShowDialog();
+
+				// Close the new form when it's done
+				mainform->Close();
+
+				// Show the current form again
+				this->Show();
+			}
+			else
+			{
+				MessageBox::Show("Incorrrect Password", "Error", MessageBoxButtons::OK);
+			}
+		}
+		else
+		{
+			MessageBox::Show("Incorrrect ID or Please fill in the Id.", "Error", MessageBoxButtons::OK);
+		}
+
+
+
+	}
+private: System::Void Cancellogin_Click(System::Object^ sender, System::EventArgs^ e) {
+	Application::Exit();
+}
+};
 }

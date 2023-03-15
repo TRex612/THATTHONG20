@@ -1,4 +1,6 @@
 ﻿#pragma once
+#include "CheckForm.h"
+#include "RegisForm.h"
 
 namespace THATTHONG20 {
 
@@ -64,14 +66,14 @@ namespace THATTHONG20 {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Angsana New", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button1->Location = System::Drawing::Point(361, 215);
-			this->button1->Margin = System::Windows::Forms::Padding(4);
+			this->button1->Location = System::Drawing::Point(271, 175);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(463, 107);
+			this->button1->Size = System::Drawing::Size(347, 87);
 			this->button1->TabIndex = 5;
 			this->button1->Text = L"จัดส่งพัสดุ";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->UseWaitCursor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MainFormThatthong20::button1_Click);
 			// 
 			// Checkbonton
 			// 
@@ -80,23 +82,22 @@ namespace THATTHONG20 {
 			this->Checkbonton->Font = (gcnew System::Drawing::Font(L"Angsana New", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Checkbonton->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Checkbonton->Location = System::Drawing::Point(361, 381);
-			this->Checkbonton->Margin = System::Windows::Forms::Padding(4);
+			this->Checkbonton->Location = System::Drawing::Point(271, 310);
 			this->Checkbonton->Name = L"Checkbonton";
-			this->Checkbonton->Size = System::Drawing::Size(463, 107);
+			this->Checkbonton->Size = System::Drawing::Size(347, 87);
 			this->Checkbonton->TabIndex = 4;
 			this->Checkbonton->Text = L"ตรวจสอบพัสดุ";
 			this->Checkbonton->UseVisualStyleBackColor = false;
+			this->Checkbonton->Click += gcnew System::EventHandler(this, &MainFormThatthong20::Checkbonton_Click);
 			// 
 			// MainFormThatthong20
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1185, 703);
+			this->ClientSize = System::Drawing::Size(890, 578);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->Checkbonton);
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
-			this->MinimumSize = System::Drawing::Size(1203, 750);
+			this->MinimumSize = System::Drawing::Size(906, 617);
 			this->Name = L"MainFormThatthong20";
 			this->Text = L"MainFormThatthong20";
 			this->ResumeLayout(false);
@@ -104,6 +105,33 @@ namespace THATTHONG20 {
 		}
 #pragma endregion
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void Checkbonton_Click(System::Object^ sender, System::EventArgs^ e) {
+		CheckForm^ checkform = gcnew CheckForm();
+
+		this->Hide();
+
+		checkform->ShowDialog();
+
+		// Close the new form when it's done
+		checkform->Close();
+
+		// Show the current form again
+		this->Show();
+
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		RegisForm^ regisform = gcnew RegisForm();
+
+		this->Hide();
+
+		regisform->ShowDialog();
+
+		// Close the new form when it's done
+		regisform->Close();
+
+		// Show the current form again
+		this->Show();
 	}
 	};
 }
