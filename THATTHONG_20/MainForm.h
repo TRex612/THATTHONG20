@@ -41,6 +41,7 @@ namespace THATTHONG20 {
 	private: System::Windows::Forms::Button^ Checkbonton;
 	private: System::Windows::Forms::Button^ logout;
 
+
 	protected:
 
 	private:
@@ -97,10 +98,10 @@ namespace THATTHONG20 {
 			// logout
 			// 
 			this->logout->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->logout->Location = System::Drawing::Point(481, 569);
+			this->logout->Location = System::Drawing::Point(482, 554);
 			this->logout->Name = L"logout";
 			this->logout->Size = System::Drawing::Size(214, 64);
-			this->logout->TabIndex = 6;
+			this->logout->TabIndex = 7;
 			this->logout->Text = L"LOG OUT";
 			this->logout->UseVisualStyleBackColor = true;
 			// 
