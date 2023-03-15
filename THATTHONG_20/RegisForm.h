@@ -143,7 +143,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox7;
 
 private: System::Windows::Forms::Label^ label18;
 private: System::Windows::Forms::Label^ label19;
-private: System::Windows::Forms::PictureBox^ pictureBox1;
+
 private: System::Windows::Forms::PictureBox^ pictureBox6;
 private: System::Windows::Forms::Label^ label7;
 private: System::Windows::Forms::TextBox^ textBox1;
@@ -165,6 +165,7 @@ private: System::Windows::Forms::Label^ label16;
 private: System::Windows::Forms::Label^ label17;
 private: System::Windows::Forms::Label^ label20;
 private: System::Windows::Forms::Label^ label21;
+private: System::Windows::Forms::PictureBox^ pictureBox1;
 
 
 
@@ -242,7 +243,6 @@ private: System::Windows::Forms::Label^ label21;
 			this->price = (gcnew System::Windows::Forms::Label());
 			this->id = (gcnew System::Windows::Forms::Label());
 			this->pc = (gcnew System::Windows::Forms::Label());
-			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
@@ -271,23 +271,24 @@ private: System::Windows::Forms::Label^ label21;
 			this->label17 = (gcnew System::Windows::Forms::Label());
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->label21 = (gcnew System::Windows::Forms::Label());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pop->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
 			// 
 			this->button1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.Image")));
 			this->button1->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->button1->Location = System::Drawing::Point(56, 838);
+			this->button1->Location = System::Drawing::Point(12, 660);
 			this->button1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(79, 73);
@@ -299,7 +300,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->coco->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->coco->Location = System::Drawing::Point(763, 668);
+			this->coco->Location = System::Drawing::Point(707, 535);
 			this->coco->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->coco->Name = L"coco";
 			this->coco->Size = System::Drawing::Size(105, 46);
@@ -314,7 +315,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->cf->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->cf->ForeColor = System::Drawing::Color::Black;
-			this->cf->Location = System::Drawing::Point(1633, 861);
+			this->cf->Location = System::Drawing::Point(1222, 690);
 			this->cf->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->cf->Name = L"cf";
 			this->cf->Size = System::Drawing::Size(85, 50);
@@ -345,7 +346,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->clear->Font = (gcnew System::Drawing::Font(L"supermarket", 13.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->clear->ForeColor = System::Drawing::Color::Black;
-			this->clear->Location = System::Drawing::Point(1541, 861);
+			this->clear->Location = System::Drawing::Point(1118, 690);
 			this->clear->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->clear->Name = L"clear";
 			this->clear->Size = System::Drawing::Size(80, 50);
@@ -360,7 +361,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->sd->Font = (gcnew System::Drawing::Font(L"supermarket", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->sd->ForeColor = System::Drawing::Color::Black;
-			this->sd->Location = System::Drawing::Point(209, 97);
+			this->sd->Location = System::Drawing::Point(64, 26);
 			this->sd->Name = L"sd";
 			this->sd->Size = System::Drawing::Size(59, 49);
 			this->sd->TabIndex = 124;
@@ -371,7 +372,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->calcal->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->calcal->ForeColor = System::Drawing::Color::Black;
-			this->calcal->Location = System::Drawing::Point(220, 738);
+			this->calcal->Location = System::Drawing::Point(127, 580);
 			this->calcal->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->calcal->Name = L"calcal";
 			this->calcal->Size = System::Drawing::Size(100, 46);
@@ -384,7 +385,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->emem->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->emem->ForeColor = System::Drawing::Color::Black;
-			this->emem->Location = System::Drawing::Point(638, 668);
+			this->emem->Location = System::Drawing::Point(591, 535);
 			this->emem->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->emem->Name = L"emem";
 			this->emem->Size = System::Drawing::Size(105, 46);
@@ -397,7 +398,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->free->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->free->ForeColor = System::Drawing::Color::Black;
-			this->free->Location = System::Drawing::Point(513, 668);
+			this->free->Location = System::Drawing::Point(480, 535);
 			this->free->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->free->Name = L"free";
 			this->free->Size = System::Drawing::Size(105, 46);
@@ -410,7 +411,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->type->AutoSize = true;
 			this->type->Font = (gcnew System::Drawing::Font(L"supermarket", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->type->Location = System::Drawing::Point(512, 603);
+			this->type->Location = System::Drawing::Point(522, 471);
 			this->type->Name = L"type";
 			this->type->Size = System::Drawing::Size(173, 49);
 			this->type->TabIndex = 120;
@@ -420,7 +421,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->putW->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->putW->Location = System::Drawing::Point(220, 668);
+			this->putW->Location = System::Drawing::Point(127, 522);
 			this->putW->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->putW->Multiline = true;
 			this->putW->Name = L"putW";
@@ -432,7 +433,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->weight->AutoSize = true;
 			this->weight->Font = (gcnew System::Drawing::Font(L"supermarket", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->weight->Location = System::Drawing::Point(214, 603);
+			this->weight->Location = System::Drawing::Point(119, 471);
 			this->weight->Name = L"weight";
 			this->weight->Size = System::Drawing::Size(208, 49);
 			this->weight->TabIndex = 118;
@@ -442,10 +443,10 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->XXXX->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->XXXX->Location = System::Drawing::Point(665, 461);
+			this->XXXX->Location = System::Drawing::Point(498, 363);
 			this->XXXX->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->XXXX->Name = L"XXXX";
-			this->XXXX->Size = System::Drawing::Size(196, 42);
+			this->XXXX->Size = System::Drawing::Size(182, 42);
 			this->XXXX->TabIndex = 117;
 			// 
 			// label10
@@ -453,7 +454,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label10->AutoSize = true;
 			this->label10->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label10->Location = System::Drawing::Point(542, 468);
+			this->label10->Location = System::Drawing::Point(378, 364);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(120, 41);
 			this->label10->TabIndex = 116;
@@ -463,7 +464,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->PVPV->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->PVPV->Location = System::Drawing::Point(309, 461);
+			this->PVPV->Location = System::Drawing::Point(142, 365);
 			this->PVPV->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->PVPV->MaximumSize = System::Drawing::Size(230, 40);
 			this->PVPV->Name = L"PVPV";
@@ -474,7 +475,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->amam->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->amam->Location = System::Drawing::Point(649, 403);
+			this->amam->Location = System::Drawing::Point(480, 308);
 			this->amam->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->amam->Name = L"amam";
 			this->amam->Size = System::Drawing::Size(200, 42);
@@ -485,7 +486,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label8->AutoSize = true;
 			this->label8->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label8->Location = System::Drawing::Point(548, 408);
+			this->label8->Location = System::Drawing::Point(374, 308);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(100, 41);
 			this->label8->TabIndex = 112;
@@ -495,17 +496,17 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->CCCC->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->CCCC->Location = System::Drawing::Point(346, 403);
+			this->CCCC->Location = System::Drawing::Point(186, 308);
 			this->CCCC->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->CCCC->Name = L"CCCC";
-			this->CCCC->Size = System::Drawing::Size(200, 42);
+			this->CCCC->Size = System::Drawing::Size(182, 42);
 			this->CCCC->TabIndex = 111;
 			// 
 			// soysoy
 			// 
 			this->soysoy->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->soysoy->Location = System::Drawing::Point(576, 342);
+			this->soysoy->Location = System::Drawing::Point(401, 258);
 			this->soysoy->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->soysoy->Name = L"soysoy";
 			this->soysoy->Size = System::Drawing::Size(189, 42);
@@ -516,7 +517,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->Location = System::Drawing::Point(487, 349);
+			this->label6->Location = System::Drawing::Point(315, 257);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(86, 41);
 			this->label6->TabIndex = 108;
@@ -526,7 +527,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->number->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->number->Location = System::Drawing::Point(295, 342);
+			this->number->Location = System::Drawing::Point(119, 256);
 			this->number->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->number->Name = L"number";
 			this->number->Size = System::Drawing::Size(189, 42);
@@ -537,7 +538,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label5->Location = System::Drawing::Point(238, 349);
+			this->label5->Location = System::Drawing::Point(66, 257);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(55, 41);
 			this->label5->TabIndex = 106;
@@ -548,7 +549,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"supermarket", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(209, 291);
+			this->label4->Location = System::Drawing::Point(64, 207);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(66, 52);
 			this->label4->TabIndex = 105;
@@ -558,7 +559,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->CALL->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->CALL->Location = System::Drawing::Point(392, 235);
+			this->CALL->Location = System::Drawing::Point(223, 142);
 			this->CALL->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->CALL->Name = L"CALL";
 			this->CALL->Size = System::Drawing::Size(225, 42);
@@ -569,7 +570,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(238, 238);
+			this->label3->Location = System::Drawing::Point(66, 141);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(149, 41);
 			this->label3->TabIndex = 103;
@@ -579,7 +580,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->SNSN->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->SNSN->Location = System::Drawing::Point(598, 175);
+			this->SNSN->Location = System::Drawing::Point(431, 87);
 			this->SNSN->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->SNSN->Name = L"SNSN";
 			this->SNSN->Size = System::Drawing::Size(231, 42);
@@ -591,7 +592,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label2->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::Color::Black;
-			this->label2->Location = System::Drawing::Point(512, 177);
+			this->label2->Location = System::Drawing::Point(345, 89);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(83, 41);
 			this->label2->TabIndex = 101;
@@ -602,7 +603,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->NNNN->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->NNNN->Location = System::Drawing::Point(279, 175);
+			this->NNNN->Location = System::Drawing::Point(108, 88);
 			this->NNNN->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->NNNN->Name = L"NNNN";
 			this->NNNN->Size = System::Drawing::Size(231, 42);
@@ -614,7 +615,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label1->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::Black;
-			this->label1->Location = System::Drawing::Point(238, 177);
+			this->label1->Location = System::Drawing::Point(66, 87);
 			this->label1->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(40, 41);
@@ -623,7 +624,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			// pop
 			// 
-			this->pop->BackColor = System::Drawing::Color::LightSlateGray;
+			this->pop->BackColor = System::Drawing::Color::Gainsboro;
 			this->pop->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->pop->Controls->Add(this->pictureBox9);
 			this->pop->Controls->Add(this->pictureBox8);
@@ -633,7 +634,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->pop->Controls->Add(this->re);
 			this->pop->Controls->Add(this->pc);
 			this->pop->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->pop->Location = System::Drawing::Point(1125, 611);
+			this->pop->Location = System::Drawing::Point(892, 440);
 			this->pop->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pop->Name = L"pop";
 			this->pop->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
@@ -678,7 +679,7 @@ private: System::Windows::Forms::Label^ label21;
 			// price
 			// 
 			this->price->AutoSize = true;
-			this->price->BackColor = System::Drawing::Color::LightSlateGray;
+			this->price->BackColor = System::Drawing::Color::Gainsboro;
 			this->price->Font = (gcnew System::Drawing::Font(L"supermarket", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->price->ForeColor = System::Drawing::Color::Black;
@@ -691,7 +692,7 @@ private: System::Windows::Forms::Label^ label21;
 			// id
 			// 
 			this->id->AutoSize = true;
-			this->id->BackColor = System::Drawing::Color::LightSlateGray;
+			this->id->BackColor = System::Drawing::Color::Gainsboro;
 			this->id->Font = (gcnew System::Drawing::Font(L"supermarket", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->id->ForeColor = System::Drawing::Color::Black;
@@ -714,29 +715,13 @@ private: System::Windows::Forms::Label^ label21;
 			this->pc->TabIndex = 69;
 			this->pc->Text = L"เลขพัสดุ";
 			// 
-			// pictureBox1
-			// 
-			this->pictureBox1->Anchor = System::Windows::Forms::AnchorStyles::None;
-			this->pictureBox1->BackColor = System::Drawing::Color::PapayaWhip;
-			this->pictureBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
-			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-259, 647);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->pictureBox1->MaximumSize = System::Drawing::Size(2500, 350);
-			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(2200, 350);
-			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox1->TabIndex = 153;
-			this->pictureBox1->TabStop = false;
-			this->pictureBox1->Click += gcnew System::EventHandler(this, &RegisForm::pictureBox1_Click_1);
-			// 
 			// pictureBox2
 			// 
 			this->pictureBox2->BackColor = System::Drawing::Color::PapayaWhip;
 			this->pictureBox2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
 			this->pictureBox2->Enabled = false;
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(462, 610);
+			this->pictureBox2->Location = System::Drawing::Point(462, 479);
 			this->pictureBox2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(45, 39);
@@ -748,7 +733,7 @@ private: System::Windows::Forms::Label^ label21;
 			// pictureBox3
 			// 
 			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
-			this->pictureBox3->Location = System::Drawing::Point(168, 611);
+			this->pictureBox3->Location = System::Drawing::Point(73, 479);
 			this->pictureBox3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox3->Name = L"pictureBox3";
 			this->pictureBox3->Size = System::Drawing::Size(40, 39);
@@ -759,7 +744,7 @@ private: System::Windows::Forms::Label^ label21;
 			// pictureBox4
 			// 
 			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
-			this->pictureBox4->Location = System::Drawing::Point(168, 101);
+			this->pictureBox4->Location = System::Drawing::Point(23, 30);
 			this->pictureBox4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox4->Name = L"pictureBox4";
 			this->pictureBox4->Size = System::Drawing::Size(40, 39);
@@ -770,7 +755,7 @@ private: System::Windows::Forms::Label^ label21;
 			// pictureBox5
 			// 
 			this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
-			this->pictureBox5->Location = System::Drawing::Point(168, 292);
+			this->pictureBox5->Location = System::Drawing::Point(23, 211);
 			this->pictureBox5->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox5->Name = L"pictureBox5";
 			this->pictureBox5->Size = System::Drawing::Size(40, 39);
@@ -781,7 +766,7 @@ private: System::Windows::Forms::Label^ label21;
 			// pictureBox7
 			// 
 			this->pictureBox7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.Image")));
-			this->pictureBox7->Location = System::Drawing::Point(1125, 101);
+			this->pictureBox7->Location = System::Drawing::Point(700, 30);
 			this->pictureBox7->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox7->Name = L"pictureBox7";
 			this->pictureBox7->Size = System::Drawing::Size(40, 39);
@@ -794,18 +779,19 @@ private: System::Windows::Forms::Label^ label21;
 			this->label18->AutoSize = true;
 			this->label18->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label18->Location = System::Drawing::Point(238, 408);
+			this->label18->Location = System::Drawing::Point(66, 308);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(106, 41);
 			this->label18->TabIndex = 199;
 			this->label18->Text = L"แขวง/ตำบล";
+			this->label18->Click += gcnew System::EventHandler(this, &RegisForm::label18_Click);
 			// 
 			// label19
 			// 
 			this->label19->AutoSize = true;
 			this->label19->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label19->Location = System::Drawing::Point(238, 468);
+			this->label19->Location = System::Drawing::Point(66, 364);
 			this->label19->Name = L"label19";
 			this->label19->Size = System::Drawing::Size(70, 41);
 			this->label19->TabIndex = 200;
@@ -814,7 +800,7 @@ private: System::Windows::Forms::Label^ label21;
 			// pictureBox6
 			// 
 			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
-			this->pictureBox6->Location = System::Drawing::Point(1125, 292);
+			this->pictureBox6->Location = System::Drawing::Point(700, 207);
 			this->pictureBox6->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pictureBox6->Name = L"pictureBox6";
 			this->pictureBox6->Size = System::Drawing::Size(40, 39);
@@ -828,7 +814,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label7->Font = (gcnew System::Drawing::Font(L"supermarket", 16.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label7->ForeColor = System::Drawing::Color::Black;
-			this->label7->Location = System::Drawing::Point(1166, 97);
+			this->label7->Location = System::Drawing::Point(746, 26);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(59, 49);
 			this->label7->TabIndex = 218;
@@ -838,17 +824,17 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox1->Location = System::Drawing::Point(1621, 461);
+			this->textBox1->Location = System::Drawing::Point(1186, 364);
 			this->textBox1->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(196, 42);
+			this->textBox1->Size = System::Drawing::Size(163, 42);
 			this->textBox1->TabIndex = 217;
 			// 
 			// textBox2
 			// 
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox2->Location = System::Drawing::Point(1266, 461);
+			this->textBox2->Location = System::Drawing::Point(824, 365);
 			this->textBox2->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox2->MaximumSize = System::Drawing::Size(230, 40);
 			this->textBox2->Name = L"textBox2";
@@ -859,27 +845,27 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->textBox3->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox3->Location = System::Drawing::Point(1607, 403);
+			this->textBox3->Location = System::Drawing::Point(1166, 309);
 			this->textBox3->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(200, 42);
+			this->textBox3->Size = System::Drawing::Size(183, 42);
 			this->textBox3->TabIndex = 214;
 			// 
 			// textBox4
 			// 
 			this->textBox4->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox4->Location = System::Drawing::Point(1302, 403);
+			this->textBox4->Location = System::Drawing::Point(867, 307);
 			this->textBox4->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(200, 42);
+			this->textBox4->Size = System::Drawing::Size(187, 42);
 			this->textBox4->TabIndex = 212;
 			// 
 			// textBox5
 			// 
 			this->textBox5->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox5->Location = System::Drawing::Point(1530, 342);
+			this->textBox5->Location = System::Drawing::Point(1096, 258);
 			this->textBox5->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(189, 42);
@@ -890,7 +876,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label9->AutoSize = true;
 			this->label9->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label9->Location = System::Drawing::Point(1443, 349);
+			this->label9->Location = System::Drawing::Point(1004, 259);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(86, 41);
 			this->label9->TabIndex = 210;
@@ -900,7 +886,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->textBox6->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox6->Location = System::Drawing::Point(1251, 342);
+			this->textBox6->Location = System::Drawing::Point(809, 256);
 			this->textBox6->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(189, 42);
@@ -911,7 +897,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label11->AutoSize = true;
 			this->label11->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label11->Location = System::Drawing::Point(1195, 349);
+			this->label11->Location = System::Drawing::Point(748, 259);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(55, 41);
 			this->label11->TabIndex = 208;
@@ -922,7 +908,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label12->AutoSize = true;
 			this->label12->Font = (gcnew System::Drawing::Font(L"supermarket", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label12->Location = System::Drawing::Point(1166, 291);
+			this->label12->Location = System::Drawing::Point(746, 207);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(66, 52);
 			this->label12->TabIndex = 207;
@@ -932,7 +918,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->textBox7->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox7->Location = System::Drawing::Point(1346, 235);
+			this->textBox7->Location = System::Drawing::Point(907, 142);
 			this->textBox7->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox7->Name = L"textBox7";
 			this->textBox7->Size = System::Drawing::Size(225, 42);
@@ -943,7 +929,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label13->AutoSize = true;
 			this->label13->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label13->Location = System::Drawing::Point(1195, 238);
+			this->label13->Location = System::Drawing::Point(748, 141);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(149, 41);
 			this->label13->TabIndex = 205;
@@ -953,7 +939,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->textBox8->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox8->Location = System::Drawing::Point(1554, 175);
+			this->textBox8->Location = System::Drawing::Point(1118, 90);
 			this->textBox8->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox8->Name = L"textBox8";
 			this->textBox8->Size = System::Drawing::Size(231, 42);
@@ -965,7 +951,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label14->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label14->ForeColor = System::Drawing::Color::Black;
-			this->label14->Location = System::Drawing::Point(1469, 177);
+			this->label14->Location = System::Drawing::Point(1033, 89);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(83, 41);
 			this->label14->TabIndex = 203;
@@ -976,7 +962,7 @@ private: System::Windows::Forms::Label^ label21;
 			// 
 			this->textBox9->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox9->Location = System::Drawing::Point(1237, 175);
+			this->textBox9->Location = System::Drawing::Point(796, 86);
 			this->textBox9->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->textBox9->Name = L"textBox9";
 			this->textBox9->Size = System::Drawing::Size(231, 42);
@@ -988,7 +974,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label15->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label15->ForeColor = System::Drawing::Color::Black;
-			this->label15->Location = System::Drawing::Point(1195, 177);
+			this->label15->Location = System::Drawing::Point(748, 87);
 			this->label15->Margin = System::Windows::Forms::Padding(5, 0, 5, 0);
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(40, 41);
@@ -1000,7 +986,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label16->AutoSize = true;
 			this->label16->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label16->Location = System::Drawing::Point(1195, 408);
+			this->label16->Location = System::Drawing::Point(748, 306);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(106, 41);
 			this->label16->TabIndex = 221;
@@ -1011,7 +997,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label17->AutoSize = true;
 			this->label17->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label17->Location = System::Drawing::Point(1505, 408);
+			this->label17->Location = System::Drawing::Point(1060, 309);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(100, 41);
 			this->label17->TabIndex = 213;
@@ -1022,7 +1008,7 @@ private: System::Windows::Forms::Label^ label21;
 			this->label20->AutoSize = true;
 			this->label20->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label20->Location = System::Drawing::Point(1195, 468);
+			this->label20->Location = System::Drawing::Point(748, 364);
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(70, 41);
 			this->label20->TabIndex = 222;
@@ -1033,19 +1019,30 @@ private: System::Windows::Forms::Label^ label21;
 			this->label21->AutoSize = true;
 			this->label21->Font = (gcnew System::Drawing::Font(L"supermarket", 13.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label21->Location = System::Drawing::Point(1499, 468);
+			this->label21->Location = System::Drawing::Point(1060, 363);
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(120, 41);
 			this->label21->TabIndex = 216;
 			this->label21->Text = L"รหัสไปรษณีย์";
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(-70, 429);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(1133, 468);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox1->TabIndex = 223;
+			this->pictureBox1->TabStop = false;
 			// 
 			// RegisForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
-			this->BackColor = System::Drawing::Color::PapayaWhip;
-			this->ClientSize = System::Drawing::Size(1900, 953);
+			this->BackColor = System::Drawing::Color::Snow;
+			this->ClientSize = System::Drawing::Size(1377, 745);
+			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->pictureBox6);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->textBox1);
@@ -1071,7 +1068,6 @@ private: System::Windows::Forms::Label^ label21;
 			this->Controls->Add(this->pictureBox5);
 			this->Controls->Add(this->pictureBox4);
 			this->Controls->Add(this->pictureBox3);
-			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->coco);
 			this->Controls->Add(this->cf);
@@ -1099,26 +1095,27 @@ private: System::Windows::Forms::Label^ label21;
 			this->Controls->Add(this->NNNN);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->pop);
-			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->label18);
 			this->Controls->Add(this->label8);
 			this->Controls->Add(this->label19);
 			this->Controls->Add(this->label10);
+			this->Controls->Add(this->pictureBox1);
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->MinimumSize = System::Drawing::Size(800, 600);
+			this->MaximumSize = System::Drawing::Size(1395, 792);
+			this->MinimumSize = System::Drawing::Size(1395, 792);
 			this->Name = L"RegisForm";
 			this->Text = L"RegisForm";
 			this->pop->ResumeLayout(false);
 			this->pop->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -1156,6 +1153,8 @@ private: System::Void clear_Click(System::Object^ sender, System::EventArgs^ e) 
 	putW->Text = "";
 }
 private: System::Void pictureBox1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label18_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
