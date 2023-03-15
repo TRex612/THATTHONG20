@@ -69,10 +69,9 @@ namespace THATTHONG20 {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Angsana New", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button1->Location = System::Drawing::Point(361, 215);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Location = System::Drawing::Point(271, 175);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(463, 107);
+			this->button1->Size = System::Drawing::Size(347, 87);
 			this->button1->TabIndex = 5;
 			this->button1->Text = L"จัดส่งพัสดุ";
 			this->button1->UseVisualStyleBackColor = false;
@@ -86,10 +85,9 @@ namespace THATTHONG20 {
 			this->Checkbonton->Font = (gcnew System::Drawing::Font(L"Angsana New", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Checkbonton->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Checkbonton->Location = System::Drawing::Point(361, 382);
-			this->Checkbonton->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->Checkbonton->Location = System::Drawing::Point(271, 310);
 			this->Checkbonton->Name = L"Checkbonton";
-			this->Checkbonton->Size = System::Drawing::Size(463, 107);
+			this->Checkbonton->Size = System::Drawing::Size(347, 87);
 			this->Checkbonton->TabIndex = 4;
 			this->Checkbonton->Text = L"ตรวจสอบพัสดุ";
 			this->Checkbonton->UseVisualStyleBackColor = false;
@@ -98,23 +96,24 @@ namespace THATTHONG20 {
 			// logout
 			// 
 			this->logout->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->logout->Location = System::Drawing::Point(482, 554);
+			this->logout->Location = System::Drawing::Point(362, 450);
+			this->logout->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->logout->Name = L"logout";
-			this->logout->Size = System::Drawing::Size(214, 64);
+			this->logout->Size = System::Drawing::Size(160, 52);
 			this->logout->TabIndex = 7;
 			this->logout->Text = L"LOG OUT";
 			this->logout->UseVisualStyleBackColor = true;
+			this->logout->Click += gcnew System::EventHandler(this, &MainFormThatthong20::logout_Click);
 			// 
 			// MainFormThatthong20
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1187, 711);
+			this->ClientSize = System::Drawing::Size(890, 578);
 			this->Controls->Add(this->logout);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->Checkbonton);
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
-			this->MinimumSize = System::Drawing::Size(1202, 749);
+			this->MinimumSize = System::Drawing::Size(906, 616);
 			this->Name = L"MainFormThatthong20";
 			this->Text = L"MainFormThatthong20";
 			this->ResumeLayout(false);
@@ -150,5 +149,8 @@ namespace THATTHONG20 {
 		// Show the current form again
 		this->Show();
 	}
-	};
+	private: System::Void logout_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
+	}
+};
 }

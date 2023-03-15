@@ -181,6 +181,9 @@ namespace THATTHONG20 {
 		{
 			if (Passlogin->Text == "123456789") {
 
+				IDlogin->Text = "";
+				Passlogin->Text = "";
+
 				this->Hide();
 
 				mainform->ShowDialog();
