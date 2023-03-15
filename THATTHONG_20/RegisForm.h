@@ -141,6 +141,10 @@ private: System::Windows::Forms::TextBox^ textBox8;
 private: System::Windows::Forms::Label^ label16;
 private: System::Windows::Forms::TextBox^ textBox9;
 private: System::Windows::Forms::Label^ label17;
+private: System::Windows::Forms::Label^ label18;
+private: System::Windows::Forms::Label^ label19;
+private: System::Windows::Forms::Label^ label20;
+private: System::Windows::Forms::Label^ label21;
 	private:
 
 
@@ -189,6 +193,8 @@ private: System::Windows::Forms::Label^ label17;
 			this->NNNN = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->pop = (gcnew System::Windows::Forms::Panel());
+			this->pictureBox9 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox8 = (gcnew System::Windows::Forms::PictureBox());
 			this->service = (gcnew System::Windows::Forms::Label());
 			this->price = (gcnew System::Windows::Forms::Label());
 			this->id = (gcnew System::Windows::Forms::Label());
@@ -218,9 +224,13 @@ private: System::Windows::Forms::Label^ label17;
 			this->label16 = (gcnew System::Windows::Forms::Label());
 			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
 			this->label17 = (gcnew System::Windows::Forms::Label());
-			this->pictureBox8 = (gcnew System::Windows::Forms::PictureBox());
-			this->pictureBox9 = (gcnew System::Windows::Forms::PictureBox());
+			this->label18 = (gcnew System::Windows::Forms::Label());
+			this->label19 = (gcnew System::Windows::Forms::Label());
+			this->label20 = (gcnew System::Windows::Forms::Label());
+			this->label21 = (gcnew System::Windows::Forms::Label());
 			this->pop->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
@@ -228,8 +238,6 @@ private: System::Windows::Forms::Label^ label17;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
@@ -554,6 +562,26 @@ private: System::Windows::Forms::Label^ label17;
 			this->pop->Size = System::Drawing::Size(416, 217);
 			this->pop->TabIndex = 150;
 			// 
+			// pictureBox9
+			// 
+			this->pictureBox9->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox9.Image")));
+			this->pictureBox9->Location = System::Drawing::Point(203, 33);
+			this->pictureBox9->Name = L"pictureBox9";
+			this->pictureBox9->Size = System::Drawing::Size(40, 40);
+			this->pictureBox9->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox9->TabIndex = 199;
+			this->pictureBox9->TabStop = false;
+			// 
+			// pictureBox8
+			// 
+			this->pictureBox8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.Image")));
+			this->pictureBox8->Location = System::Drawing::Point(32, 33);
+			this->pictureBox8->Name = L"pictureBox8";
+			this->pictureBox8->Size = System::Drawing::Size(40, 40);
+			this->pictureBox8->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox8->TabIndex = 199;
+			this->pictureBox8->TabStop = false;
+			// 
 			// service
 			// 
 			this->service->AutoSize = true;
@@ -860,25 +888,49 @@ private: System::Windows::Forms::Label^ label17;
 			this->label17->TabIndex = 179;
 			this->label17->Text = L"ชื่อ";
 			// 
-			// pictureBox8
+			// label18
 			// 
-			this->pictureBox8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.Image")));
-			this->pictureBox8->Location = System::Drawing::Point(32, 33);
-			this->pictureBox8->Name = L"pictureBox8";
-			this->pictureBox8->Size = System::Drawing::Size(40, 40);
-			this->pictureBox8->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox8->TabIndex = 199;
-			this->pictureBox8->TabStop = false;
+			this->label18->AutoSize = true;
+			this->label18->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label18->Location = System::Drawing::Point(109, 350);
+			this->label18->Name = L"label18";
+			this->label18->Size = System::Drawing::Size(94, 35);
+			this->label18->TabIndex = 199;
+			this->label18->Text = L"แขวง/ตำบล";
 			// 
-			// pictureBox9
+			// label19
 			// 
-			this->pictureBox9->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox9.Image")));
-			this->pictureBox9->Location = System::Drawing::Point(203, 33);
-			this->pictureBox9->Name = L"pictureBox9";
-			this->pictureBox9->Size = System::Drawing::Size(40, 40);
-			this->pictureBox9->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
-			this->pictureBox9->TabIndex = 199;
-			this->pictureBox9->TabStop = false;
+			this->label19->AutoSize = true;
+			this->label19->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label19->Location = System::Drawing::Point(109, 410);
+			this->label19->Name = L"label19";
+			this->label19->Size = System::Drawing::Size(61, 35);
+			this->label19->TabIndex = 200;
+			this->label19->Text = L"จังหวัด";
+			// 
+			// label20
+			// 
+			this->label20->AutoSize = true;
+			this->label20->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label20->Location = System::Drawing::Point(865, 410);
+			this->label20->Name = L"label20";
+			this->label20->Size = System::Drawing::Size(61, 35);
+			this->label20->TabIndex = 202;
+			this->label20->Text = L"จังหวัด";
+			// 
+			// label21
+			// 
+			this->label21->AutoSize = true;
+			this->label21->Font = (gcnew System::Drawing::Font(L"supermarket", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label21->Location = System::Drawing::Point(865, 350);
+			this->label21->Name = L"label21";
+			this->label21->Size = System::Drawing::Size(94, 35);
+			this->label21->TabIndex = 201;
+			this->label21->Text = L"แขวง/ตำบล";
 			// 
 			// RegisForm
 			// 
@@ -886,6 +938,10 @@ private: System::Windows::Forms::Label^ label17;
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::PapayaWhip;
 			this->ClientSize = System::Drawing::Size(1498, 825);
+			this->Controls->Add(this->label20);
+			this->Controls->Add(this->label21);
+			this->Controls->Add(this->label19);
+			this->Controls->Add(this->label18);
 			this->Controls->Add(this->pictureBox6);
 			this->Controls->Add(this->pictureBox7);
 			this->Controls->Add(this->label7);
@@ -944,6 +1000,8 @@ private: System::Windows::Forms::Label^ label17;
 			this->Text = L"RegisForm";
 			this->pop->ResumeLayout(false);
 			this->pop->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
@@ -951,8 +1009,6 @@ private: System::Windows::Forms::Label^ label17;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox5))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox6))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox7))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox8))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox9))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
