@@ -1,2 +1,2 @@
-#include "MyForm.h"
+#include "MainForm.h"
 
