@@ -44,8 +44,5 @@
     <ClInclude Include="CheckForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\User\Desktop\sqlite3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
