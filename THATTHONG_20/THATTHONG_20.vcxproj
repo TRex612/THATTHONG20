@@ -133,16 +133,12 @@
   <ItemGroup>
     <ClCompile Include="CheckForm.cpp" />
     <ClCompile Include="LoginFormThatthong20.cpp" />
-    <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="MainFormThat.cpp" />
     <ClCompile Include="RegisForm.cpp" />
     <ClCompile Include="RunForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CheckForm.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
-    <ClInclude Include="MainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="LoginForm.h">
@@ -158,9 +154,6 @@
   <ItemGroup>
     <EmbeddedResource Include="CheckForm.resx">
       <DependentUpon>CheckForm.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.h</DependentUpon>

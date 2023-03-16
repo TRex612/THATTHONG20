@@ -1,4 +1,6 @@
 #pragma once
+#include "CheckForm.h"
+#include "RegisForm.h"
 
 namespace THATTHONG20 {
 
@@ -37,6 +39,7 @@ namespace THATTHONG20 {
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ Checkbonton;
+	private: System::Windows::Forms::Button^ logout;
 	protected:
 
 	private:
@@ -56,6 +59,7 @@ namespace THATTHONG20 {
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->Checkbonton = (gcnew System::Windows::Forms::Button());
+			this->logout = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -83,6 +87,7 @@ namespace THATTHONG20 {
 			this->button1->TabIndex = 6;
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->UseWaitCursor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MainFormThat::button1_Click);
 			// 
 			// Checkbonton
 			// 
@@ -97,12 +102,26 @@ namespace THATTHONG20 {
 			this->Checkbonton->Size = System::Drawing::Size(232, 55);
 			this->Checkbonton->TabIndex = 7;
 			this->Checkbonton->UseVisualStyleBackColor = false;
+			this->Checkbonton->Click += gcnew System::EventHandler(this, &MainFormThat::Checkbonton_Click);
+			// 
+			// logout
+			// 
+			this->logout->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->logout->Location = System::Drawing::Point(355, 514);
+			this->logout->Margin = System::Windows::Forms::Padding(2);
+			this->logout->Name = L"logout";
+			this->logout->Size = System::Drawing::Size(160, 52);
+			this->logout->TabIndex = 8;
+			this->logout->Text = L"LOG OUT";
+			this->logout->UseVisualStyleBackColor = true;
+			this->logout->Click += gcnew System::EventHandler(this, &MainFormThat::logout_Click);
 			// 
 			// MainFormThat
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(890, 577);
+			this->Controls->Add(this->logout);
 			this->Controls->Add(this->Checkbonton);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->pictureBox1);
@@ -115,5 +134,34 @@ namespace THATTHONG20 {
 
 		}
 #pragma endregion
-	};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		RegisForm^ regisform = gcnew RegisForm();
+
+		this->Hide();
+
+		regisform->ShowDialog();
+
+		// Close the new form when it's done
+		regisform->Close();
+
+		// Show the current form again
+		this->Show();
+	}
+private: System::Void Checkbonton_Click(System::Object^ sender, System::EventArgs^ e) {
+	CheckForm^ checkform = gcnew CheckForm();
+
+	this->Hide();
+
+	checkform->ShowDialog();
+
+	// Close the new form when it's done
+	checkform->Close();
+
+	// Show the current form again
+	this->Show();
+}
+private: System::Void logout_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+}
+};
 }

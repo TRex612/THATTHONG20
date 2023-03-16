@@ -1,5 +1,5 @@
 #pragma once
-#include "MainForm.h"
+#include "MainFormThat.h"
 
 namespace THATTHONG20 {
 
@@ -226,7 +226,7 @@ namespace THATTHONG20 {
 		}
 #pragma endregion
 	private: System::Void OKlogin_Click(System::Object^ sender, System::EventArgs^ e) {
-		MainFormThatthong20^ mainform = gcnew MainFormThatthong20();
+		MainFormThat^ mainform = gcnew MainFormThat();
 		if (IDlogin->Text=="admin20")
 		{
 			if (Passlogin->Text == "123456789") {

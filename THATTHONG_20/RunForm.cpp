@@ -1,5 +1,5 @@
 #include "LoginForm.h"
-#include "MainForm.h"
+#include "MainFormThat.h"
 #include "CheckForm.h"
 #include "RegisForm.h"
 
@@ -13,9 +13,9 @@ void main(array<String^>^ args)
 	Application::SetCompatibleTextRenderingDefault(false);
 	
 	THATTHONG20::LoginForm loginform;
-	THATTHONG20::MainFormThatthong20 mainform;
+	THATTHONG20::MainFormThat mainform;
 	THATTHONG20::CheckForm checkform;
 	THATTHONG20::RegisForm regisform;
 	
-	Application::Run(% mainform);
+	Application::Run(% loginform);
 }
