@@ -332,6 +332,7 @@ private: System::Windows::Forms::Button^ out;
 			this->calcal->Size = System::Drawing::Size(74, 37);
 			this->calcal->TabIndex = 123;
 			this->calcal->UseVisualStyleBackColor = false;
+			this->calcal->Click += gcnew System::EventHandler(this, &RegisForm::calcal_Click);
 			// 
 			// emem
 			// 
@@ -722,9 +723,17 @@ private: System::Void pictureBox1_Click_1(System::Object^ sender, System::EventA
 private: System::Void label18_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void cf_Click(System::Object^ sender, System::EventArgs^ e) {
+	if (MessageBox::Show("Are you sure you want to save the data ? ",
+		"Please check the accuracy again.", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == System::Windows::Forms::DialogResult::Yes) {
+		this->Close();
+	}
+	
 }
 private: System::Void out_Click(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();
+}
+private: System::Void calcal_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->price->Text = "รอทำแป๊บค้าบ";
 }
 };
 }
