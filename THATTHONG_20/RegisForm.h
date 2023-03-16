@@ -844,7 +844,11 @@ private: System::Void label18_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void cf_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (MessageBox::Show("Are you sure you want to save the data ? ",
 		"Please check the accuracy again.", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == System::Windows::Forms::DialogResult::Yes) {
-		this->Close();
+		String^ Carrier = this->NNNN->Text + " " + this->SNSN->Text;
+		String^ CarrierAddress = number->Text + " " + soysoy->Text + " " + CCCC->Text + " " + amam->Text + " " + PVPV->Text + " " + XXXX->Text + " " + "Phone Number is " + CALL->Text;
+		String^ Receiver = this->textBox9->Text + " " + this->textBox8->Text;
+		String^ ReceiverAddress = textBox6->Text + " " + textBox5->Text + " " + textBox4->Text + " " + textBox3->Text + " " + textBox2->Text + " " + textBox1->Text + " " + "Phone Number is " + textBox7->Text;
+		id->Text = Carrier;
 	}
 	
 }
