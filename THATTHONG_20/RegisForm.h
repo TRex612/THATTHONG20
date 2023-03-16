@@ -221,7 +221,11 @@ private: System::Windows::Forms::Button^ out;
 		/// Required designer variable.
 		/// </summary>
 		double PackageService = 0,ShippingTypeService = 0;
-		System::ComponentModel::Container ^components;
+private: System::Windows::Forms::PictureBox^ pictureBox3;
+private: System::Windows::Forms::Button^ button2;
+private: System::Windows::Forms::Button^ button3;
+private: System::Windows::Forms::Button^ button4;
+	   System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -263,9 +267,14 @@ private: System::Windows::Forms::Button^ out;
 			this->pictureBox10 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->out = (gcnew System::Windows::Forms::Button());
+			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox10))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
@@ -596,7 +605,7 @@ private: System::Windows::Forms::Button^ out;
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-5, 498);
+			this->pictureBox1->Location = System::Drawing::Point(429, 495);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(697, 124);
@@ -645,6 +654,59 @@ private: System::Windows::Forms::Button^ out;
 			this->out->UseVisualStyleBackColor = false;
 			this->out->Click += gcnew System::EventHandler(this, &RegisForm::out_Click);
 			// 
+			// pictureBox3
+			// 
+			this->pictureBox3->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
+			this->pictureBox3->Location = System::Drawing::Point(248, 481);
+			this->pictureBox3->Name = L"pictureBox3";
+			this->pictureBox3->Size = System::Drawing::Size(128, 36);
+			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->pictureBox3->TabIndex = 227;
+			this->pictureBox3->TabStop = false;
+			// 
+			// button2
+			// 
+			this->button2->BackColor = System::Drawing::Color::Transparent;
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button2->ForeColor = System::Drawing::Color::Black;
+			this->button2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.Image")));
+			this->button2->Location = System::Drawing::Point(248, 522);
+			this->button2->Margin = System::Windows::Forms::Padding(2);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(79, 37);
+			this->button2->TabIndex = 228;
+			this->button2->UseVisualStyleBackColor = false;
+			// 
+			// button3
+			// 
+			this->button3->BackColor = System::Drawing::Color::Transparent;
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button3->ForeColor = System::Drawing::Color::Black;
+			this->button3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.Image")));
+			this->button3->Location = System::Drawing::Point(332, 522);
+			this->button3->Margin = System::Windows::Forms::Padding(2);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(79, 37);
+			this->button3->TabIndex = 229;
+			this->button3->UseVisualStyleBackColor = false;
+			// 
+			// button4
+			// 
+			this->button4->BackColor = System::Drawing::Color::Transparent;
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button4->ForeColor = System::Drawing::Color::Black;
+			this->button4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button4.Image")));
+			this->button4->Location = System::Drawing::Point(415, 522);
+			this->button4->Margin = System::Windows::Forms::Padding(2);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(107, 37);
+			this->button4->TabIndex = 230;
+			this->button4->UseVisualStyleBackColor = false;
+			// 
 			// RegisForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -653,6 +715,10 @@ private: System::Windows::Forms::Button^ out;
 			this->BackColor = System::Drawing::Color::White;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
 			this->ClientSize = System::Drawing::Size(1034, 612);
+			this->Controls->Add(this->button4);
+			this->Controls->Add(this->button3);
+			this->Controls->Add(this->button2);
+			this->Controls->Add(this->pictureBox3);
 			this->Controls->Add(this->out);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->textBox1);
@@ -694,6 +760,7 @@ private: System::Windows::Forms::Button^ out;
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox10))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
