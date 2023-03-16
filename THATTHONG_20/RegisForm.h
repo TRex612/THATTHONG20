@@ -178,6 +178,7 @@ private: System::Windows::Forms::TextBox^ textBox9;
 private: System::Windows::Forms::PictureBox^ pictureBox1;
 private: System::Windows::Forms::PictureBox^ pictureBox10;
 private: System::Windows::Forms::PictureBox^ pictureBox2;
+private: System::Windows::Forms::Button^ out;
 
 
 
@@ -251,6 +252,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox10 = (gcnew System::Windows::Forms::PictureBox());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->out = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox10))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
@@ -261,7 +263,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->button1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.Image")));
 			this->button1->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->button1->Location = System::Drawing::Point(9, 536);
-			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(59, 59);
 			this->button1->TabIndex = 151;
@@ -276,8 +278,8 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 				static_cast<System::Byte>(0)));
 			this->cf->ForeColor = System::Drawing::Color::Black;
 			this->cf->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"cf.Image")));
-			this->cf->Location = System::Drawing::Point(901, 544);
-			this->cf->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->cf->Location = System::Drawing::Point(818, 544);
+			this->cf->Margin = System::Windows::Forms::Padding(2);
 			this->cf->Name = L"cf";
 			this->cf->Size = System::Drawing::Size(94, 41);
 			this->cf->TabIndex = 127;
@@ -292,7 +294,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->re->ForeColor = System::Drawing::Color::Black;
 			this->re->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"re.Image")));
 			this->re->Location = System::Drawing::Point(563, 480);
-			this->re->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->re->Margin = System::Windows::Forms::Padding(2);
 			this->re->Name = L"re";
 			this->re->Size = System::Drawing::Size(84, 26);
 			this->re->TabIndex = 126;
@@ -308,8 +310,8 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 				static_cast<System::Byte>(0)));
 			this->clear->ForeColor = System::Drawing::Color::Black;
 			this->clear->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"clear.Image")));
-			this->clear->Location = System::Drawing::Point(796, 544);
-			this->clear->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->clear->Location = System::Drawing::Point(720, 544);
+			this->clear->Margin = System::Windows::Forms::Padding(2);
 			this->clear->Name = L"clear";
 			this->clear->Size = System::Drawing::Size(94, 41);
 			this->clear->TabIndex = 125;
@@ -325,7 +327,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->calcal->ForeColor = System::Drawing::Color::Transparent;
 			this->calcal->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"calcal.Image")));
 			this->calcal->Location = System::Drawing::Point(64, 480);
-			this->calcal->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->calcal->Margin = System::Windows::Forms::Padding(2);
 			this->calcal->Name = L"calcal";
 			this->calcal->Size = System::Drawing::Size(74, 37);
 			this->calcal->TabIndex = 123;
@@ -338,7 +340,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->emem->ForeColor = System::Drawing::Color::Black;
 			this->emem->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"emem.Image")));
 			this->emem->Location = System::Drawing::Point(332, 439);
-			this->emem->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->emem->Margin = System::Windows::Forms::Padding(2);
 			this->emem->Name = L"emem";
 			this->emem->Size = System::Drawing::Size(79, 37);
 			this->emem->TabIndex = 122;
@@ -352,7 +354,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->free->ForeColor = System::Drawing::Color::Black;
 			this->free->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"free.Image")));
 			this->free->Location = System::Drawing::Point(248, 439);
-			this->free->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->free->Margin = System::Windows::Forms::Padding(2);
 			this->free->Name = L"free";
 			this->free->Size = System::Drawing::Size(79, 37);
 			this->free->TabIndex = 121;
@@ -363,7 +365,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->putW->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->putW->Location = System::Drawing::Point(64, 439);
-			this->putW->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->putW->Margin = System::Windows::Forms::Padding(2);
 			this->putW->Name = L"putW";
 			this->putW->Size = System::Drawing::Size(151, 31);
 			this->putW->TabIndex = 119;
@@ -373,7 +375,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->XXXX->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->XXXX->Location = System::Drawing::Point(393, 320);
-			this->XXXX->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->XXXX->Margin = System::Windows::Forms::Padding(2);
 			this->XXXX->Name = L"XXXX";
 			this->XXXX->Size = System::Drawing::Size(129, 26);
 			this->XXXX->TabIndex = 117;
@@ -383,7 +385,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->PVPV->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->PVPV->Location = System::Drawing::Point(128, 320);
-			this->PVPV->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->PVPV->Margin = System::Windows::Forms::Padding(2);
 			this->PVPV->MaximumSize = System::Drawing::Size(174, 40);
 			this->PVPV->Name = L"PVPV";
 			this->PVPV->Size = System::Drawing::Size(174, 26);
@@ -394,7 +396,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->amam->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->amam->Location = System::Drawing::Point(386, 283);
-			this->amam->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->amam->Margin = System::Windows::Forms::Padding(2);
 			this->amam->Name = L"amam";
 			this->amam->Size = System::Drawing::Size(126, 26);
 			this->amam->TabIndex = 113;
@@ -404,7 +406,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->CCCC->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->CCCC->Location = System::Drawing::Point(161, 280);
-			this->CCCC->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->CCCC->Margin = System::Windows::Forms::Padding(2);
 			this->CCCC->Name = L"CCCC";
 			this->CCCC->Size = System::Drawing::Size(129, 26);
 			this->CCCC->TabIndex = 111;
@@ -414,7 +416,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->soysoy->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->soysoy->Location = System::Drawing::Point(362, 245);
-			this->soysoy->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->soysoy->Margin = System::Windows::Forms::Padding(2);
 			this->soysoy->Name = L"soysoy";
 			this->soysoy->Size = System::Drawing::Size(143, 26);
 			this->soysoy->TabIndex = 109;
@@ -424,7 +426,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->number->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->number->Location = System::Drawing::Point(120, 247);
-			this->number->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->number->Margin = System::Windows::Forms::Padding(2);
 			this->number->Name = L"number";
 			this->number->Size = System::Drawing::Size(163, 26);
 			this->number->TabIndex = 107;
@@ -434,7 +436,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->CALL->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->CALL->Location = System::Drawing::Point(191, 176);
-			this->CALL->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->CALL->Margin = System::Windows::Forms::Padding(2);
 			this->CALL->Name = L"CALL";
 			this->CALL->Size = System::Drawing::Size(170, 26);
 			this->CALL->TabIndex = 104;
@@ -444,7 +446,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->SNSN->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->SNSN->Location = System::Drawing::Point(331, 138);
-			this->SNSN->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->SNSN->Margin = System::Windows::Forms::Padding(2);
 			this->SNSN->Name = L"SNSN";
 			this->SNSN->Size = System::Drawing::Size(163, 26);
 			this->SNSN->TabIndex = 102;
@@ -454,7 +456,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->NNNN->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->NNNN->Location = System::Drawing::Point(103, 138);
-			this->NNNN->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->NNNN->Margin = System::Windows::Forms::Padding(2);
 			this->NNNN->Name = L"NNNN";
 			this->NNNN->Size = System::Drawing::Size(162, 26);
 			this->NNNN->TabIndex = 100;
@@ -492,7 +494,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox1->Location = System::Drawing::Point(908, 319);
-			this->textBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(97, 26);
 			this->textBox1->TabIndex = 217;
@@ -502,7 +504,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox2->Location = System::Drawing::Point(644, 320);
-			this->textBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox2->Margin = System::Windows::Forms::Padding(2);
 			this->textBox2->MaximumSize = System::Drawing::Size(174, 40);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(162, 26);
@@ -513,7 +515,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->textBox3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox3->Location = System::Drawing::Point(894, 281);
-			this->textBox3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox3->Margin = System::Windows::Forms::Padding(2);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(110, 26);
 			this->textBox3->TabIndex = 214;
@@ -523,7 +525,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->textBox4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox4->Location = System::Drawing::Point(680, 281);
-			this->textBox4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox4->Margin = System::Windows::Forms::Padding(2);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(134, 26);
 			this->textBox4->TabIndex = 212;
@@ -533,7 +535,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->textBox5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox5->Location = System::Drawing::Point(883, 245);
-			this->textBox5->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox5->Margin = System::Windows::Forms::Padding(2);
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(122, 26);
 			this->textBox5->TabIndex = 211;
@@ -543,7 +545,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->textBox6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox6->Location = System::Drawing::Point(634, 245);
-			this->textBox6->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox6->Margin = System::Windows::Forms::Padding(2);
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(172, 26);
 			this->textBox6->TabIndex = 209;
@@ -553,7 +555,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->textBox7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox7->Location = System::Drawing::Point(707, 177);
-			this->textBox7->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox7->Margin = System::Windows::Forms::Padding(2);
 			this->textBox7->Name = L"textBox7";
 			this->textBox7->Size = System::Drawing::Size(170, 26);
 			this->textBox7->TabIndex = 206;
@@ -563,7 +565,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->textBox8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox8->Location = System::Drawing::Point(843, 138);
-			this->textBox8->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox8->Margin = System::Windows::Forms::Padding(2);
 			this->textBox8->Name = L"textBox8";
 			this->textBox8->Size = System::Drawing::Size(153, 26);
 			this->textBox8->TabIndex = 204;
@@ -573,7 +575,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->textBox9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox9->Location = System::Drawing::Point(619, 137);
-			this->textBox9->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->textBox9->Margin = System::Windows::Forms::Padding(2);
 			this->textBox9->Name = L"textBox9";
 			this->textBox9->Size = System::Drawing::Size(156, 26);
 			this->textBox9->TabIndex = 202;
@@ -582,7 +584,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->Location = System::Drawing::Point(-5, 498);
-			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox1->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(697, 124);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
@@ -595,7 +597,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->pictureBox10->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
 			this->pictureBox10->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox10.Image")));
 			this->pictureBox10->Location = System::Drawing::Point(-24, 24);
-			this->pictureBox10->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox10->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox10->Name = L"pictureBox10";
 			this->pictureBox10->Size = System::Drawing::Size(1012, 484);
 			this->pictureBox10->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
@@ -606,12 +608,29 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
 			this->pictureBox2->Location = System::Drawing::Point(700, 17);
-			this->pictureBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(318, 54);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 			this->pictureBox2->TabIndex = 225;
 			this->pictureBox2->TabStop = false;
+			// 
+			// out
+			// 
+			this->out->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->out->BackColor = System::Drawing::Color::Transparent;
+			this->out->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
+			this->out->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->out->ForeColor = System::Drawing::Color::Black;
+			this->out->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"out.Image")));
+			this->out->Location = System::Drawing::Point(916, 544);
+			this->out->Margin = System::Windows::Forms::Padding(2);
+			this->out->Name = L"out";
+			this->out->Size = System::Drawing::Size(94, 41);
+			this->out->TabIndex = 226;
+			this->out->UseVisualStyleBackColor = false;
+			this->out->Click += gcnew System::EventHandler(this, &RegisForm::out_Click);
 			// 
 			// RegisForm
 			// 
@@ -621,6 +640,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->BackColor = System::Drawing::Color::White;
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
 			this->ClientSize = System::Drawing::Size(1034, 612);
+			this->Controls->Add(this->out);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->textBox2);
@@ -653,7 +673,7 @@ private: System::Windows::Forms::PictureBox^ pictureBox2;
 			this->Controls->Add(this->pictureBox1);
 			this->Controls->Add(this->pictureBox10);
 			this->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->MaximumSize = System::Drawing::Size(1050, 651);
 			this->MinimumSize = System::Drawing::Size(1050, 651);
 			this->Name = L"RegisForm";
@@ -702,6 +722,9 @@ private: System::Void pictureBox1_Click_1(System::Object^ sender, System::EventA
 private: System::Void label18_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void cf_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void out_Click(System::Object^ sender, System::EventArgs^ e) {
+	Application::Exit();
 }
 };
 }

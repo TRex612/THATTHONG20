@@ -52,6 +52,8 @@ namespace THATTHONG20 {
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::DataGridView^ dataGridView1;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::PictureBox^ pictureBox3;
+	private: System::Windows::Forms::Button^ out;
 
 
 
@@ -76,18 +78,23 @@ namespace THATTHONG20 {
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
+			this->out = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button2
 			// 
 			this->button2->Anchor = System::Windows::Forms::AnchorStyles::Right;
-			this->button2->BackColor = System::Drawing::Color::LightCoral;
+			this->button2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(192)), static_cast<System::Int32>(static_cast<System::Byte>(0)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->button2->Font = (gcnew System::Drawing::Font(L"Tahoma", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button2->Location = System::Drawing::Point(734, 238);
+			this->button2->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->button2->Location = System::Drawing::Point(734, 237);
 			this->button2->MinimumSize = System::Drawing::Size(90, 37);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(90, 37);
@@ -102,7 +109,8 @@ namespace THATTHONG20 {
 			this->button1->BackColor = System::Drawing::Color::OliveDrab;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Tahoma", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(638, 238);
+			this->button1->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->button1->Location = System::Drawing::Point(638, 237);
 			this->button1->MinimumSize = System::Drawing::Size(90, 37);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(90, 37);
@@ -116,10 +124,10 @@ namespace THATTHONG20 {
 			this->textBox1->Anchor = System::Windows::Forms::AnchorStyles::Right;
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Tahoma", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->textBox1->Location = System::Drawing::Point(539, 173);
+			this->textBox1->Location = System::Drawing::Point(539, 172);
 			this->textBox1->MinimumSize = System::Drawing::Size(285, 51);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(285, 36);
+			this->textBox1->Size = System::Drawing::Size(285, 51);
 			this->textBox1->TabIndex = 13;
 			// 
 			// button3
@@ -127,7 +135,7 @@ namespace THATTHONG20 {
 			this->button3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->button3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.Image")));
 			this->button3->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->button3->Location = System::Drawing::Point(17, 505);
+			this->button3->Location = System::Drawing::Point(17, 504);
 			this->button3->Margin = System::Windows::Forms::Padding(2);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(59, 59);
@@ -141,7 +149,7 @@ namespace THATTHONG20 {
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(-3, -1);
+			this->pictureBox1->Location = System::Drawing::Point(-5, -32);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(2, 2, 2, 6);
 			this->pictureBox1->MaximumSize = System::Drawing::Size(904, 616);
 			this->pictureBox1->MinimumSize = System::Drawing::Size(904, 616);
@@ -158,31 +166,62 @@ namespace THATTHONG20 {
 			this->dataGridView1->BackgroundColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->GridColor = System::Drawing::SystemColors::Info;
-			this->dataGridView1->Location = System::Drawing::Point(233, 292);
+			this->dataGridView1->Location = System::Drawing::Point(264, 309);
 			this->dataGridView1->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowTemplate->Height = 24;
-			this->dataGridView1->Size = System::Drawing::Size(591, 65);
+			this->dataGridView1->Size = System::Drawing::Size(560, 65);
 			this->dataGridView1->TabIndex = 154;
 			// 
 			// pictureBox2
 			// 
 			this->pictureBox2->Anchor = System::Windows::Forms::AnchorStyles::Right;
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(506, 85);
+			this->pictureBox2->Location = System::Drawing::Point(506, 84);
 			this->pictureBox2->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox2->Name = L"pictureBox2";
-			this->pictureBox2->Size = System::Drawing::Size(230, 82);
+			this->pictureBox2->Size = System::Drawing::Size(222, 82);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
 			this->pictureBox2->TabIndex = 155;
 			this->pictureBox2->TabStop = false;
+			// 
+			// pictureBox3
+			// 
+			this->pictureBox3->Anchor = System::Windows::Forms::AnchorStyles::Right;
+			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
+			this->pictureBox3->Location = System::Drawing::Point(587, -48);
+			this->pictureBox3->Margin = System::Windows::Forms::Padding(2);
+			this->pictureBox3->Name = L"pictureBox3";
+			this->pictureBox3->Size = System::Drawing::Size(350, 156);
+			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
+			this->pictureBox3->TabIndex = 226;
+			this->pictureBox3->TabStop = false;
+			// 
+			// out
+			// 
+			this->out->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->out->BackColor = System::Drawing::Color::Transparent;
+			this->out->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
+			this->out->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 13.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->out->ForeColor = System::Drawing::Color::Black;
+			this->out->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"out.Image")));
+			this->out->Location = System::Drawing::Point(768, 511);
+			this->out->Margin = System::Windows::Forms::Padding(2);
+			this->out->Name = L"out";
+			this->out->Size = System::Drawing::Size(94, 41);
+			this->out->TabIndex = 227;
+			this->out->UseVisualStyleBackColor = false;
+			this->out->Click += gcnew System::EventHandler(this, &CheckForm::out_Click);
 			// 
 			// CheckForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(890, 578);
+			this->ClientSize = System::Drawing::Size(890, 577);
+			this->Controls->Add(this->out);
 			this->Controls->Add(this->pictureBox2);
+			this->Controls->Add(this->pictureBox3);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
@@ -190,12 +229,14 @@ namespace THATTHONG20 {
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->pictureBox1);
 			this->Margin = System::Windows::Forms::Padding(2);
+			this->MaximumSize = System::Drawing::Size(906, 616);
 			this->MinimumSize = System::Drawing::Size(906, 616);
 			this->Name = L"CheckForm";
 			this->Text = L"CheckForm";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -225,5 +266,8 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	dataGridView1->Columns->Add("Tracking", "Tracking");
 }
 
+private: System::Void out_Click(System::Object^ sender, System::EventArgs^ e) {
+	Application::Exit();
+}
 };
 }
