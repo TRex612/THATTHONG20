@@ -138,6 +138,8 @@ namespace THATTHONG20 {
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->Location = System::Drawing::Point(-4, -1);
 			this->pictureBox1->Margin = System::Windows::Forms::Padding(3, 3, 3, 8);
+			this->pictureBox1->MaximumSize = System::Drawing::Size(1205, 758);
+			this->pictureBox1->MinimumSize = System::Drawing::Size(1205, 758);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(1205, 758);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
