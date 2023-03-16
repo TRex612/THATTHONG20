@@ -23,6 +23,15 @@ namespace THATTHONG20 {
 			//
 		}
 
+		RegisForm(double^data)
+		{
+			InitializeComponent();
+		
+			
+		}
+
+	
+
 	protected:
 		/// <summary>
 		/// Clean up any resources being used.
@@ -211,6 +220,7 @@ private: System::Windows::Forms::Button^ out;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
+		double PackageService = 0,ShippingTypeService = 0;
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
@@ -346,6 +356,7 @@ private: System::Windows::Forms::Button^ out;
 			this->emem->Size = System::Drawing::Size(79, 37);
 			this->emem->TabIndex = 122;
 			this->emem->UseVisualStyleBackColor = true;
+			this->emem->Click += gcnew System::EventHandler(this, &RegisForm::emem_Click);
 			// 
 			// free
 			// 
@@ -360,6 +371,7 @@ private: System::Windows::Forms::Button^ out;
 			this->free->Size = System::Drawing::Size(79, 37);
 			this->free->TabIndex = 121;
 			this->free->UseVisualStyleBackColor = false;
+			this->free->Click += gcnew System::EventHandler(this, &RegisForm::free_Click);
 			// 
 			// putW
 			// 
@@ -737,7 +749,15 @@ private: System::Void out_Click(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();
 }
 private: System::Void calcal_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->price->Text = "รอทำแป๊บค้าบ";
+	double ServicePrier;
+	ServicePrier = ((System::Convert::ToDouble(putW->Text) * 3.5)+ShippingTypeService+PackageService)*1.1 ;
+	price->Text = System::Convert::ToString(ServicePrier);
+}
+private: System::Void free_Click(System::Object^ sender, System::EventArgs^ e) {
+	ShippingTypeService = 20;
+}
+private: System::Void emem_Click(System::Object^ sender, System::EventArgs^ e) {
+	ShippingTypeService = 50;
 }
 };
 }
