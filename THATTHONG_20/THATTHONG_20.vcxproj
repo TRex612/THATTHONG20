@@ -165,6 +165,9 @@
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainFormThat.resx">
+      <DependentUpon>MainFormThat.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegisForm.resx">
       <DependentUpon>RegisForm.h</DependentUpon>
     </EmbeddedResource>

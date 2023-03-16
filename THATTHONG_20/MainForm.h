@@ -40,6 +40,7 @@ namespace THATTHONG20 {
 	protected:
 	private: System::Windows::Forms::Button^ Checkbonton;
 	private: System::Windows::Forms::Button^ logout;
+	private: System::Windows::Forms::Button^ button2;
 
 
 	protected:
@@ -57,9 +58,11 @@ namespace THATTHONG20 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MainFormThatthong20::typeid));
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->Checkbonton = (gcnew System::Windows::Forms::Button());
 			this->logout = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -97,7 +100,7 @@ namespace THATTHONG20 {
 			// 
 			this->logout->Anchor = System::Windows::Forms::AnchorStyles::Top;
 			this->logout->Location = System::Drawing::Point(362, 450);
-			this->logout->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->logout->Margin = System::Windows::Forms::Padding(2);
 			this->logout->Name = L"logout";
 			this->logout->Size = System::Drawing::Size(160, 52);
 			this->logout->TabIndex = 7;
@@ -105,11 +108,27 @@ namespace THATTHONG20 {
 			this->logout->UseVisualStyleBackColor = true;
 			this->logout->Click += gcnew System::EventHandler(this, &MainFormThatthong20::logout_Click);
 			// 
+			// button2
+			// 
+			this->button2->Anchor = System::Windows::Forms::AnchorStyles::Top;
+			this->button2->BackColor = System::Drawing::Color::Transparent;
+			this->button2->Font = (gcnew System::Drawing::Font(L"Angsana New", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button2->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.Image")));
+			this->button2->Location = System::Drawing::Point(334, 261);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(223, 56);
+			this->button2->TabIndex = 8;
+			this->button2->UseVisualStyleBackColor = false;
+			this->button2->UseWaitCursor = true;
+			// 
 			// MainFormThatthong20
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(890, 578);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->logout);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->Checkbonton);
