@@ -35,16 +35,22 @@ namespace THATTHONG20 {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^ PASSWORD;
+
 	protected:
-	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Label^ label2;
+
+
 	private: System::Windows::Forms::Button^ Cancellogin;
 	private: System::Windows::Forms::Button^ OKlogin;
 	private: System::Windows::Forms::TextBox^ Passlogin;
 	private: System::Windows::Forms::TextBox^ IDlogin;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::PictureBox^ pictureBox3;
+	private: System::Windows::Forms::PictureBox^ pictureBox4;
+
+
+
 
 	private:
 		/// <summary>
@@ -60,93 +66,51 @@ namespace THATTHONG20 {
 		void InitializeComponent(void)
 		{
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(LoginForm::typeid));
-			this->PASSWORD = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->Cancellogin = (gcnew System::Windows::Forms::Button());
 			this->OKlogin = (gcnew System::Windows::Forms::Button());
 			this->Passlogin = (gcnew System::Windows::Forms::TextBox());
 			this->IDlogin = (gcnew System::Windows::Forms::TextBox());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
+			this->pictureBox4 = (gcnew System::Windows::Forms::PictureBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
 			this->SuspendLayout();
-			// 
-			// PASSWORD
-			// 
-			this->PASSWORD->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom));
-			this->PASSWORD->AutoSize = true;
-			this->PASSWORD->BackColor = System::Drawing::Color::Black;
-			this->PASSWORD->Font = (gcnew System::Drawing::Font(L"supermarket", 22.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->PASSWORD->ForeColor = System::Drawing::Color::White;
-			this->PASSWORD->Location = System::Drawing::Point(231, 387);
-			this->PASSWORD->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->PASSWORD->Name = L"PASSWORD";
-			this->PASSWORD->Size = System::Drawing::Size(191, 68);
-			this->PASSWORD->TabIndex = 17;
-			this->PASSWORD->Text = L"PASSWORD";
-			// 
-			// label3
-			// 
-			this->label3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom));
-			this->label3->AutoSize = true;
-			this->label3->BackColor = System::Drawing::Color::Black;
-			this->label3->Font = (gcnew System::Drawing::Font(L"supermarket", 22.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label3->ForeColor = System::Drawing::Color::White;
-			this->label3->Location = System::Drawing::Point(309, 315);
-			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(124, 68);
-			this->label3->TabIndex = 16;
-			this->label3->Text = L"NAME ";
-			// 
-			// label2
-			// 
-			this->label2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom));
-			this->label2->AutoSize = true;
-			this->label2->BackColor = System::Drawing::Color::Black;
-			this->label2->Font = (gcnew System::Drawing::Font(L"supermarket", 49.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label2->ForeColor = System::Drawing::Color::White;
-			this->label2->Location = System::Drawing::Point(498, 152);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(251, 145);
-			this->label2->TabIndex = 15;
-			this->label2->Text = L"LOGIN";
-			this->label2->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// Cancellogin
 			// 
 			this->Cancellogin->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->Cancellogin->BackColor = System::Drawing::Color::BlueViolet;
-			this->Cancellogin->Font = (gcnew System::Drawing::Font(L"supermarket", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->Cancellogin->BackColor = System::Drawing::Color::Transparent;
+			this->Cancellogin->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Cancellogin->ForeColor = System::Drawing::Color::White;
-			this->Cancellogin->Location = System::Drawing::Point(888, 471);
+			this->Cancellogin->ForeColor = System::Drawing::Color::Transparent;
+			this->Cancellogin->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"Cancellogin.Image")));
+			this->Cancellogin->Location = System::Drawing::Point(863, 472);
 			this->Cancellogin->Margin = System::Windows::Forms::Padding(4);
 			this->Cancellogin->Name = L"Cancellogin";
-			this->Cancellogin->Size = System::Drawing::Size(80, 43);
+			this->Cancellogin->Size = System::Drawing::Size(105, 49);
 			this->Cancellogin->TabIndex = 14;
-			this->Cancellogin->Text = L"Cancel";
 			this->Cancellogin->UseVisualStyleBackColor = false;
 			this->Cancellogin->Click += gcnew System::EventHandler(this, &LoginForm::Cancellogin_Click);
 			// 
 			// OKlogin
 			// 
 			this->OKlogin->Anchor = System::Windows::Forms::AnchorStyles::Top;
-			this->OKlogin->BackColor = System::Drawing::Color::DimGray;
-			this->OKlogin->Font = (gcnew System::Drawing::Font(L"supermarket", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->OKlogin->BackColor = System::Drawing::SystemColors::WindowFrame;
+			this->OKlogin->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"OKlogin.BackgroundImage")));
+			this->OKlogin->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->OKlogin->ForeColor = System::Drawing::Color::White;
-			this->OKlogin->Location = System::Drawing::Point(790, 472);
+			this->OKlogin->ForeColor = System::Drawing::Color::Transparent;
+			this->OKlogin->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"OKlogin.Image")));
+			this->OKlogin->Location = System::Drawing::Point(747, 472);
 			this->OKlogin->Margin = System::Windows::Forms::Padding(4);
 			this->OKlogin->Name = L"OKlogin";
-			this->OKlogin->Size = System::Drawing::Size(80, 43);
+			this->OKlogin->Size = System::Drawing::Size(105, 49);
 			this->OKlogin->TabIndex = 12;
-			this->OKlogin->Text = L"Login";
 			this->OKlogin->UseVisualStyleBackColor = false;
 			this->OKlogin->Click += gcnew System::EventHandler(this, &LoginForm::OKlogin_Click);
 			// 
@@ -159,7 +123,7 @@ namespace THATTHONG20 {
 			this->Passlogin->Margin = System::Windows::Forms::Padding(4);
 			this->Passlogin->Name = L"Passlogin";
 			this->Passlogin->PasswordChar = '*';
-			this->Passlogin->Size = System::Drawing::Size(538, 38);
+			this->Passlogin->Size = System::Drawing::Size(538, 32);
 			this->Passlogin->TabIndex = 13;
 			this->Passlogin->UseSystemPasswordChar = true;
 			this->Passlogin->TextChanged += gcnew System::EventHandler(this, &LoginForm::Passlogin_TextChanged);
@@ -172,7 +136,7 @@ namespace THATTHONG20 {
 			this->IDlogin->Location = System::Drawing::Point(430, 328);
 			this->IDlogin->Margin = System::Windows::Forms::Padding(4);
 			this->IDlogin->Name = L"IDlogin";
-			this->IDlogin->Size = System::Drawing::Size(538, 38);
+			this->IDlogin->Size = System::Drawing::Size(538, 32);
 			this->IDlogin->TabIndex = 11;
 			// 
 			// pictureBox1
@@ -194,33 +158,68 @@ namespace THATTHONG20 {
 			this->label1->Anchor = System::Windows::Forms::AnchorStyles::Bottom;
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::Black;
-			this->label1->Font = (gcnew System::Drawing::Font(L"supermarket", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::DimGray;
-			this->label1->Location = System::Drawing::Point(528, 563);
+			this->label1->Location = System::Drawing::Point(560, 608);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(173, 44);
+			this->label1->Size = System::Drawing::Size(124, 16);
 			this->label1->TabIndex = 19;
 			this->label1->Text = L"THATTHONG SAO";
+			// 
+			// pictureBox2
+			// 
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
+			this->pictureBox2->Location = System::Drawing::Point(493, 127);
+			this->pictureBox2->Name = L"pictureBox2";
+			this->pictureBox2->Size = System::Drawing::Size(246, 139);
+			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->pictureBox2->TabIndex = 20;
+			this->pictureBox2->TabStop = false;
+			// 
+			// pictureBox3
+			// 
+			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
+			this->pictureBox3->Location = System::Drawing::Point(237, 305);
+			this->pictureBox3->Name = L"pictureBox3";
+			this->pictureBox3->Size = System::Drawing::Size(169, 72);
+			this->pictureBox3->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->pictureBox3->TabIndex = 21;
+			this->pictureBox3->TabStop = false;
+			// 
+			// pictureBox4
+			// 
+			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
+			this->pictureBox4->Location = System::Drawing::Point(149, 368);
+			this->pictureBox4->Name = L"pictureBox4";
+			this->pictureBox4->Size = System::Drawing::Size(245, 97);
+			this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
+			this->pictureBox4->TabIndex = 22;
+			this->pictureBox4->TabStop = false;
 			// 
 			// LoginForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1187, 711);
+			this->Controls->Add(this->pictureBox3);
+			this->Controls->Add(this->pictureBox4);
+			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->PASSWORD);
-			this->Controls->Add(this->label3);
-			this->Controls->Add(this->label2);
 			this->Controls->Add(this->Cancellogin);
 			this->Controls->Add(this->OKlogin);
 			this->Controls->Add(this->Passlogin);
 			this->Controls->Add(this->IDlogin);
 			this->Controls->Add(this->pictureBox1);
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->MaximumSize = System::Drawing::Size(1203, 750);
+			this->MinimumSize = System::Drawing::Size(1203, 750);
 			this->Name = L"LoginForm";
 			this->Text = L" ";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
