@@ -692,6 +692,10 @@ private: System::Windows::Forms::Button^ out;
 private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void re_Click(System::Object^ sender, System::EventArgs^ e) {
+	price->Text = "";
+	id->Text = "";
+
+
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
