@@ -17,5 +17,5 @@ void main(array<String^>^ args)
 	THATTHONG20::CheckForm checkform;
 	THATTHONG20::RegisForm regisform;
 	
-	Application::Run(% regisform);
+	Application::Run(% loginform);
 }
