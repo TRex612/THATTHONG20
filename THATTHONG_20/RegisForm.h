@@ -678,6 +678,7 @@ private: System::Windows::Forms::Button^ button4;
 			this->button2->Size = System::Drawing::Size(79, 37);
 			this->button2->TabIndex = 228;
 			this->button2->UseVisualStyleBackColor = false;
+			this->button2->Click += gcnew System::EventHandler(this, &RegisForm::button2_Click);
 			// 
 			// button3
 			// 
@@ -692,6 +693,7 @@ private: System::Windows::Forms::Button^ button4;
 			this->button3->Size = System::Drawing::Size(79, 37);
 			this->button3->TabIndex = 229;
 			this->button3->UseVisualStyleBackColor = false;
+			this->button3->Click += gcnew System::EventHandler(this, &RegisForm::button3_Click);
 			// 
 			// button4
 			// 
@@ -706,6 +708,7 @@ private: System::Windows::Forms::Button^ button4;
 			this->button4->Size = System::Drawing::Size(107, 37);
 			this->button4->TabIndex = 230;
 			this->button4->UseVisualStyleBackColor = false;
+			this->button4->Click += gcnew System::EventHandler(this, &RegisForm::button4_Click);
 			// 
 			// RegisForm
 			// 
@@ -825,6 +828,15 @@ private: System::Void free_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void emem_Click(System::Object^ sender, System::EventArgs^ e) {
 	ShippingTypeService = 50;
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	PackageService = 30;
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+	PackageService = 20;
+}
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	PackageService = 10;
 }
 };
 }
