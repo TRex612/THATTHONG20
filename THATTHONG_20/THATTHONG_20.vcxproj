@@ -76,12 +76,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>E:\New folder %289%29\THATTHONG_20\sqlite3;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\New folder %289%29\THATTHONG_20\sqlite3;$(LibraryPath)</LibraryPath>
+    <IncludePath>THATTHONG_20;$(IncludePath)</IncludePath>
+    <LibraryPath>THATTHONG_20;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>E:\New folder %289%29\THATTHONG_20\sqlite3;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\New folder %289%29\THATTHONG_20\sqlite3;$(LibraryPath)</LibraryPath>
+    <IncludePath>THATTHONG_20;$(IncludePath)</IncludePath>
+    <LibraryPath>THATTHONG_20;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -89,7 +89,8 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sqlite3.lib</AdditionalDependencies>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
@@ -118,7 +119,8 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>sqlite3.lib</AdditionalDependencies>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -132,6 +134,8 @@
     <ClCompile Include="CheckForm.cpp" />
     <ClCompile Include="LoginFormThatthong20.cpp" />
     <ClCompile Include="MainForm.cpp" />
+    <ClCompile Include="MainFormThat.cpp" />
+    <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="RegisForm.cpp" />
     <ClCompile Include="RunForm.cpp" />
   </ItemGroup>
@@ -143,6 +147,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="LoginForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MainFormThat.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="RegisForm.h">

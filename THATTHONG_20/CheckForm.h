@@ -1,5 +1,4 @@
 ﻿#pragma once
-#include <sqlite3.h> 
 #include <string>
 #include <iostream>
 #include <vector>
@@ -129,7 +128,7 @@ namespace THATTHONG20 {
 			this->button3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.Image")));
 			this->button3->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			this->button3->Location = System::Drawing::Point(17, 505);
-			this->button3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->button3->Margin = System::Windows::Forms::Padding(2);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(59, 59);
 			this->button3->TabIndex = 152;
@@ -160,7 +159,7 @@ namespace THATTHONG20 {
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->GridColor = System::Drawing::SystemColors::Info;
 			this->dataGridView1->Location = System::Drawing::Point(233, 292);
-			this->dataGridView1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->dataGridView1->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowTemplate->Height = 24;
 			this->dataGridView1->Size = System::Drawing::Size(591, 65);
@@ -171,7 +170,7 @@ namespace THATTHONG20 {
 			this->pictureBox2->Anchor = System::Windows::Forms::AnchorStyles::Right;
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
 			this->pictureBox2->Location = System::Drawing::Point(506, 85);
-			this->pictureBox2->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pictureBox2->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(230, 82);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::CenterImage;
@@ -190,7 +189,7 @@ namespace THATTHONG20 {
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->pictureBox1);
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->MinimumSize = System::Drawing::Size(906, 616);
 			this->Name = L"CheckForm";
 			this->Text = L"CheckForm";
@@ -223,65 +222,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	dataGridView1->Columns->Add("Service", "Service");
 	dataGridView1->Columns->Add("DeliveryDate", "DeliveryDate");
 	dataGridView1->Columns->Add("Tracking", "Tracking");
-
-
-
-	sqlite3* db;
-	sqlite3_stmt* stmt;
-
-	// Open the database
-	int rc = sqlite3_open("datathatthong20.db", &db);
-
-	// Prepare the SELECT statement
-	const char* sql1 = "SELECT * from DataStock WHERE ID = ";
-	String^ sql21 = this->textBox1->Text;
-	std::string str = msclr::interop::marshal_as<std::string>(sql21);
-	const char* sql22 = str.c_str();
-
-	// Calculate the length of the concatenated string
-	size_t len = strlen(sql1) + strlen(sql22) + 1;
-
-	// Allocate memory for the concatenated string
-	char* result = new char[len];
-
-	// Copy str1 to the result string using strcpy_s()
-	strcpy_s(result, len, sql1);
-
-	// Concatenate str2 to the end of result using strcat_s()
-	strcat_s(result, len, sql22);
-
-
-	rc = sqlite3_prepare_v2(db, result, -1, &stmt, 0);
-
-	// Execute the SELECT statement and retrieve the data
-	std::vector<std::vector<std::string>> data;
-	while (sqlite3_step(stmt) == SQLITE_ROW)
-	{
-		std::vector<std::string> row;
-		for (int i = 0; i < sqlite3_column_count(stmt); i++)
-		{
-			std::string val = std::string(reinterpret_cast<const char*>(sqlite3_column_text(stmt, i)));
-			row.push_back(val);
-		}
-		data.push_back(row);
-	}
-
-	delete[] result;
-	// Close the database
-	sqlite3_finalize(stmt);
-	sqlite3_close(db);
-
-	// Populate the DataGridView with the retrieved data
-	for (int i = 0; i < data.size(); i++)
-	{
-		DataGridViewRow^ row = gcnew DataGridViewRow();
-		for (int j = 0; j < data[i].size(); j++)
-		{
-			row->Cells->Add(gcnew DataGridViewTextBoxCell());
-			row->Cells[j]->Value = gcnew String(data[i][j].c_str());
-		}
-		dataGridView1->Rows->Add(row);
-	}
 }
+
 };
 }
