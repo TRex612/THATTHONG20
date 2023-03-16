@@ -135,7 +135,6 @@
     <ClCompile Include="LoginFormThatthong20.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="MainFormThat.cpp" />
-    <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="RegisForm.cpp" />
     <ClCompile Include="RunForm.cpp" />
   </ItemGroup>
