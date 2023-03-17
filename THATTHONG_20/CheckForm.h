@@ -266,8 +266,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	dataGridView1->Columns->Add("Weight", "Weight");
 	dataGridView1->Columns->Add("ShippingType", "ShippingType");
 	dataGridView1->Columns->Add("Service", "Service");
-	dataGridView1->Columns->Add("DeliveryDate", "DeliveryDate");
-	dataGridView1->Columns->Add("Tracking", "Tracking");
+
 
 
 
