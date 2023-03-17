@@ -7,6 +7,7 @@
 #include <vcclr.h>
 #include <Windows.h>
 #include <msclr/marshal_cppstd.h>
+#include <ctime>
 
 namespace THATTHONG20 {
 
@@ -988,7 +989,7 @@ private: System::Void cf_Click(System::Object^ sender, System::EventArgs^ e) {
 
 
 		// Prepare SQL statement
-		rc = sqlite3_prepare_v2(db, "INSERT INTO DataStock VALUES(?,?,?,?,?,?,?,?,?,?,? )", -1, &stmt, nullptr);
+		rc = sqlite3_prepare_v2(db, "INSERT INTO DataStock VALUES(?,?,?,?,?,?,?,?,? )", -1, &stmt, nullptr);
 
 		// Bind data to statement
 		rc = sqlite3_bind_int(stmt, 1, datalastrow2 + 1);
@@ -1000,7 +1001,6 @@ private: System::Void cf_Click(System::Object^ sender, System::EventArgs^ e) {
 		rc = sqlite3_bind_double(stmt, 7, stod(Weight1)) ;
 		rc = sqlite3_bind_text(stmt, 8, ShippingType1, -1, SQLITE_TRANSIENT);
 		rc = sqlite3_bind_double(stmt, 9, stod(price1));
-		rc = sqlite3_bind_text(stmt, 10, "some text", -1, SQLITE_TRANSIENT);
 
 
 		// Execute statement
