@@ -266,8 +266,8 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	dataGridView1->Columns->Add("Weight", "Weight");
 	dataGridView1->Columns->Add("ShippingType", "ShippingType");
 	dataGridView1->Columns->Add("Service", "Service");
-
-
+	dataGridView1->Columns->Add("DateSub", "DateSub");
+	dataGridView1->Columns->Add("DateReceipt", "DateReceipt");
 
 
 	sqlite3* db;
@@ -278,35 +278,14 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 
 
 	String^ sql211 = this->textBox1->Text;
+
 	const char* sql11 = "SELECT * from DataStock WHERE ID = ";
 	std::string id = msclr::interop::marshal_as<std::string>(sql211);
 	std::string fullSql = sql11 + id;
 	const char* sql221 = fullSql.c_str();
 
-	// Prepare the SELECT statement
-	/*const char* sql11 = "SELECT * from DataStock WHERE ID = ";
-	String^ sql211 = this->textBox1->Text;
-	std::string str10 = msclr::interop::marshal_as<std::string>(sql211);
-	const char* sql221 = str10.c_str();
-	char* result110 = new char[std::strlen(sql11) + std::strlen(sql221) + 1];
-	std::strcpy(result110, sql11);
-	std::strcat(result110, sql221);*/
-
-	//// Calculate the length of the concatenated string
-	//size_t len = strlen(sql11) + strlen(sql221) + 1;
-
-	//// Allocate memory for the concatenated string
-	//char* result1 = new char[len];
-
-	//// Copy str1 to the result string using strcpy_s()
-	//strcpy_s(result1, len, sql11);
-
-	//// Concatenate str2 to the end of result using strcat_s()
-	//strcat_s(result1, len, sql221);
-
-
-
 	
+
 
 	rc = sqlite3_prepare_v2(db, sql221, -1, &stmt10, 0);
 
@@ -324,6 +303,9 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	}
 
 	//// Close the database
+
+
+
 	sqlite3_finalize(stmt10);
 	sqlite3_close(db);
 
@@ -338,6 +320,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		}
 		dataGridView1->Rows->Add(row);
 	}
+
 }
 
 private: System::Void out_Click(System::Object^ sender, System::EventArgs^ e) {

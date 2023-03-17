@@ -852,6 +852,14 @@ private: System::Void cf_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (MessageBox::Show("Are you sure you want to save the data ? ",
 		"Please check the accuracy again.", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == System::Windows::Forms::DialogResult::Yes) {
 		
+		time_t t = time(nullptr);
+		char buffer[80];
+		strftime(buffer, sizeof(buffer), "%Y-%m-%d", localtime(&t));
+		const char* DateSub = buffer;
+
+		int x;
+
+
 		const char* ShippingType1 = " ";
 		const char* PackageType1=" ";
 
@@ -868,10 +876,12 @@ private: System::Void cf_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (ShippingType == 1)
 		{
 			ShippingType1 = "Standard";
+			x = 5;
 		}
 		if (ShippingType == 2)
 		{
 			ShippingType1 = "Express";
+			x = 2;
 		}
 
 		if (PackageType == 1)
@@ -886,6 +896,11 @@ private: System::Void cf_Click(System::Object^ sender, System::EventArgs^ e) {
 		{
 			PackageType1 = "PlasticPack";
 		}
+
+		time_t t2 = time(nullptr) + (86400 * x);
+		char buffer2[80];
+		strftime(buffer2, sizeof(buffer2), "%Y-%m-%d", localtime(&t2));
+		const char* DateSub2 = buffer2;
 
 
 
@@ -985,11 +1000,8 @@ private: System::Void cf_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->id->Text = System::Convert::ToString(datalastrow2+1);
 
 
-
-
-
 		// Prepare SQL statement
-		rc = sqlite3_prepare_v2(db, "INSERT INTO DataStock VALUES(?,?,?,?,?,?,?,?,? )", -1, &stmt, nullptr);
+		rc = sqlite3_prepare_v2(db, "INSERT INTO DataStock VALUES(?,?,?,?,?,?,?,?,?,?,? )", -1, &stmt, nullptr);
 
 		// Bind data to statement
 		rc = sqlite3_bind_int(stmt, 1, datalastrow2 + 1);
@@ -1001,6 +1013,10 @@ private: System::Void cf_Click(System::Object^ sender, System::EventArgs^ e) {
 		rc = sqlite3_bind_double(stmt, 7, stod(Weight1)) ;
 		rc = sqlite3_bind_text(stmt, 8, ShippingType1, -1, SQLITE_TRANSIENT);
 		rc = sqlite3_bind_double(stmt, 9, stod(price1));
+		rc = sqlite3_bind_text(stmt, 10, DateSub, -1, SQLITE_TRANSIENT);
+		rc = sqlite3_bind_text(stmt, 11, DateSub2, -1, SQLITE_TRANSIENT);
+	
+
 
 
 		// Execute statement
