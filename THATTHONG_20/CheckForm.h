@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include <sqlite3.h>
 #include <string>
 #include <iostream>
 #include <vector>
@@ -54,6 +55,9 @@ namespace THATTHONG20 {
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
 	private: System::Windows::Forms::Button^ out;
+
+
+
 
 
 
@@ -127,7 +131,7 @@ namespace THATTHONG20 {
 			this->textBox1->Location = System::Drawing::Point(539, 172);
 			this->textBox1->MinimumSize = System::Drawing::Size(285, 51);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(285, 51);
+			this->textBox1->Size = System::Drawing::Size(285, 36);
 			this->textBox1->TabIndex = 13;
 			// 
 			// button3
@@ -264,6 +268,77 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	dataGridView1->Columns->Add("Service", "Service");
 	dataGridView1->Columns->Add("DeliveryDate", "DeliveryDate");
 	dataGridView1->Columns->Add("Tracking", "Tracking");
+
+
+
+	sqlite3* db;
+	sqlite3_stmt* stmt10;
+
+	// Open the database
+	int rc = sqlite3_open("datathatthong20.db", &db);
+
+
+	String^ sql211 = this->textBox1->Text;
+	const char* sql11 = "SELECT * from DataStock WHERE ID = ";
+	std::string id = msclr::interop::marshal_as<std::string>(sql211);
+	std::string fullSql = sql11 + id;
+	const char* sql221 = fullSql.c_str();
+
+	// Prepare the SELECT statement
+	/*const char* sql11 = "SELECT * from DataStock WHERE ID = ";
+	String^ sql211 = this->textBox1->Text;
+	std::string str10 = msclr::interop::marshal_as<std::string>(sql211);
+	const char* sql221 = str10.c_str();
+	char* result110 = new char[std::strlen(sql11) + std::strlen(sql221) + 1];
+	std::strcpy(result110, sql11);
+	std::strcat(result110, sql221);*/
+
+	//// Calculate the length of the concatenated string
+	//size_t len = strlen(sql11) + strlen(sql221) + 1;
+
+	//// Allocate memory for the concatenated string
+	//char* result1 = new char[len];
+
+	//// Copy str1 to the result string using strcpy_s()
+	//strcpy_s(result1, len, sql11);
+
+	//// Concatenate str2 to the end of result using strcat_s()
+	//strcat_s(result1, len, sql221);
+
+
+
+	
+
+	rc = sqlite3_prepare_v2(db, sql221, -1, &stmt10, 0);
+
+	//// Execute the SELECT statement and retrieve the data
+	std::vector<std::vector<std::string>> data;
+	while (sqlite3_step(stmt10) == SQLITE_ROW)
+	{
+		std::vector<std::string> row;
+		for (int i = 0; i < sqlite3_column_count(stmt10); i++)
+		{
+			std::string val = std::string(reinterpret_cast<const char*>(sqlite3_column_text(stmt10, i)));
+			row.push_back(val);
+		}
+		data.push_back(row);
+	}
+
+	//// Close the database
+	sqlite3_finalize(stmt10);
+	sqlite3_close(db);
+
+	//// Populate the DataGridView with the retrieved data
+	for (int i = 0; i < data.size(); i++)
+	{
+		DataGridViewRow^ row = gcnew DataGridViewRow();
+		for (int j = 0; j < data[i].size(); j++)
+		{
+			row->Cells->Add(gcnew DataGridViewTextBoxCell());
+			row->Cells[j]->Value = gcnew String(data[i][j].c_str());
+		}
+		dataGridView1->Rows->Add(row);
+	}
 }
 
 private: System::Void out_Click(System::Object^ sender, System::EventArgs^ e) {

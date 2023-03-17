@@ -1,4 +1,12 @@
 ﻿#pragma once
+#include <sqlite3.h>
+#include <string>
+#include <iostream>
+#include <vector>
+#include <sstream>
+#include <vcclr.h>
+#include <Windows.h>
+#include <msclr/marshal_cppstd.h>
 
 namespace THATTHONG20 {
 
@@ -8,6 +16,7 @@ namespace THATTHONG20 {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace std;
 
 	/// <summary>
 	/// Summary for RegisForm
@@ -23,12 +32,6 @@ namespace THATTHONG20 {
 			//
 		}
 
-		RegisForm(double^data)
-		{
-			InitializeComponent();
-		
-			
-		}
 
 	
 
@@ -220,7 +223,10 @@ private: System::Windows::Forms::Button^ out;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
-		double PackageService = 0,ShippingTypeService = 0;
+		double PackageService = 0,ShippingTypeService = 0,ServicePrier = 0, Weight = 0;
+		int ShippingType,PackageType;
+
+
 private: System::Windows::Forms::PictureBox^ pictureBox3;
 private: System::Windows::Forms::Button^ button2;
 private: System::Windows::Forms::Button^ button3;
@@ -844,11 +850,168 @@ private: System::Void label18_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void cf_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (MessageBox::Show("Are you sure you want to save the data ? ",
 		"Please check the accuracy again.", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == System::Windows::Forms::DialogResult::Yes) {
-		String^ Carrier = this->NNNN->Text + " " + this->SNSN->Text;
-		String^ CarrierAddress = number->Text + " " + soysoy->Text + " " + CCCC->Text + " " + amam->Text + " " + PVPV->Text + " " + XXXX->Text + " " + "Phone Number is " + CALL->Text;
-		String^ Receiver = this->textBox9->Text + " " + this->textBox8->Text;
-		String^ ReceiverAddress = textBox6->Text + " " + textBox5->Text + " " + textBox4->Text + " " + textBox3->Text + " " + textBox2->Text + " " + textBox1->Text + " " + "Phone Number is " + textBox7->Text;
-		id->Text = Carrier;
+		
+		const char* ShippingType1 = " ";
+		const char* PackageType1=" ";
+
+		String^ Weight0 = putW->Text;
+		std::string str4 = msclr::interop::marshal_as<std::string>(Weight0);
+		const char* Weight1 = str4.c_str();
+		
+		String^ price0 = price->Text;
+		std::string str5 = msclr::interop::marshal_as<std::string>(price0);
+		const char* price1 = str5.c_str();
+
+
+
+		if (ShippingType == 1)
+		{
+			ShippingType1 = "Standard";
+		}
+		if (ShippingType == 2)
+		{
+			ShippingType1 = "Express";
+		}
+
+		if (PackageType == 1)
+		{
+			PackageType1 = "Box";
+		}
+		if (PackageType == 2)
+		{
+			PackageType1 = "Envelope";
+		}
+		if (PackageType == 3)
+		{
+			PackageType1 = "PlasticPack";
+		}
+
+
+
+		String^ Carrier0 = this->NNNN->Text + " " + this->SNSN->Text;
+		std::string str0 = msclr::interop::marshal_as<std::string>(Carrier0);
+		const char* Carrier = str0.c_str();
+
+		// Calculate the length of the concatenated string
+		size_t len0 = strlen(Carrier) + 1;
+
+		// Allocate memory for the concatenated string
+		char* result0 = new char[len0];
+
+		// Copy str1 to the result string using strcpy_s()
+		strcpy_s(result0, len0, Carrier);
+
+
+		String^ CarrierAddress0 = number->Text + " " + soysoy->Text + " " + CCCC->Text + " " + amam->Text + " " + PVPV->Text + " " + XXXX->Text + " " + "Phone Number is " + CALL->Text;
+		std::string str1 = msclr::interop::marshal_as<std::string>(CarrierAddress0);
+		const char* CarrierAddress = str1.c_str();
+
+		// Calculate the length of the concatenated string
+		size_t len1 = strlen(CarrierAddress) + 1;
+
+		// Allocate memory for the concatenated string
+		char* result1 = new char[len1];
+
+		// Copy str1 to the result string using strcpy_s()
+		strcpy_s(result1, len1, CarrierAddress);
+
+
+		String^ Receiver0 = this->textBox9->Text + " " + this->textBox8->Text;
+		std::string str2 = msclr::interop::marshal_as<std::string>(Receiver0);
+		const char* Receiver = str2.c_str();
+
+		// Calculate the length of the concatenated string
+		size_t len2 = strlen(Receiver) + 1;
+
+		// Allocate memory for the concatenated string
+		char* result2 = new char[len2];
+
+		// Copy str1 to the result string using strcpy_s()
+		strcpy_s(result2, len2, Receiver);
+
+
+		String^ ReceiverAddress0 = textBox6->Text + " " + textBox5->Text + " " + textBox4->Text + " " + textBox3->Text + " " + textBox2->Text + " " + textBox1->Text + " " + "Phone Number is " + textBox7->Text;
+		std::string str3 = msclr::interop::marshal_as<std::string>(ReceiverAddress0);
+		const char* ReceiverAddress = str3.c_str();
+
+		// Calculate the length of the concatenated string
+		size_t len3 = strlen(ReceiverAddress) + 1;
+
+		// Allocate memory for the concatenated string
+		char* result3 = new char[len3];
+
+		// Copy str1 to the result string using strcpy_s()
+		strcpy_s(result3, len3, ReceiverAddress);
+
+
+
+		sqlite3* db;
+		sqlite3_stmt* stmt;
+		sqlite3_stmt* stmt2;
+
+
+		// Open database connection
+		int rc = sqlite3_open("datathatthong20.db", &db);
+
+		const char* Lastrow = "SELECT ID FROM DataStock ORDER BY id DESC LIMIT 1";
+		rc = sqlite3_prepare_v2(db, Lastrow, -1, &stmt2, 0);
+		std::vector<std::vector<std::string>> data;
+		while (sqlite3_step(stmt2) == SQLITE_ROW)
+		{
+			std::vector<std::string> row;
+			for (int i = 0; i < sqlite3_column_count(stmt2); i++)
+			{
+				std::string val = std::string(reinterpret_cast<const char*>(sqlite3_column_text(stmt2, i)));
+				row.push_back(val);
+			}
+			data.push_back(row);
+		}
+
+		std::vector<std::vector<int>> datalastrow;
+		for (const auto& row : data) {
+			std::vector<int> intRow;
+			for (const auto& str : row) {
+				intRow.push_back(std::stoi(str));
+			}
+			datalastrow.push_back(intRow);
+		}
+
+		int datalastrow2 = datalastrow[0][0];
+
+
+		sqlite3_finalize(stmt2);
+
+		this->id->Text = System::Convert::ToString(datalastrow2+1);
+
+
+
+
+
+		// Prepare SQL statement
+		rc = sqlite3_prepare_v2(db, "INSERT INTO DataStock VALUES(?,?,?,?,?,?,?,?,?,?,? )", -1, &stmt, nullptr);
+
+		// Bind data to statement
+		rc = sqlite3_bind_int(stmt, 1, datalastrow2 + 1);
+		rc = sqlite3_bind_text(stmt, 2, Carrier, -1, SQLITE_TRANSIENT);
+		rc = sqlite3_bind_text(stmt, 3, CarrierAddress, -1, SQLITE_TRANSIENT);
+		rc = sqlite3_bind_text(stmt, 4, Receiver, -1, SQLITE_TRANSIENT);
+		rc = sqlite3_bind_text(stmt, 5, ReceiverAddress, -1, SQLITE_TRANSIENT);
+		rc = sqlite3_bind_text(stmt, 6, PackageType1, -1, SQLITE_TRANSIENT);
+		rc = sqlite3_bind_double(stmt, 7, stod(Weight1)) ;
+		rc = sqlite3_bind_text(stmt, 8, ShippingType1, -1, SQLITE_TRANSIENT);
+		rc = sqlite3_bind_double(stmt, 9, stod(price1));
+		rc = sqlite3_bind_text(stmt, 10, "some text", -1, SQLITE_TRANSIENT);
+
+
+		// Execute statement
+		rc = sqlite3_step(stmt);
+
+		// Close statement
+		rc = sqlite3_finalize(stmt);
+
+		// Close database connection
+		rc = sqlite3_close(db);
+
 	}
 	
 }
@@ -856,24 +1019,28 @@ private: System::Void out_Click(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();
 }
 private: System::Void calcal_Click(System::Object^ sender, System::EventArgs^ e) {
-	double ServicePrier;
 	ServicePrier = ((System::Convert::ToDouble(putW->Text) * 3.5)+ShippingTypeService+PackageService)*1.1 ;
 	price->Text = System::Convert::ToString(ServicePrier);
 }
 private: System::Void free_Click(System::Object^ sender, System::EventArgs^ e) {
 	ShippingTypeService = 20;
+	ShippingType = 1;
 }
 private: System::Void emem_Click(System::Object^ sender, System::EventArgs^ e) {
 	ShippingTypeService = 50;
+	ShippingType = 2;
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	PackageService = 30;
+	PackageType = 1;
 }
 private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
 	PackageService = 20;
+	PackageType = 2;
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 	PackageService = 10;
+	PackageType = 3;
 }
 private: System::Void pictureBox5_Click(System::Object^ sender, System::EventArgs^ e) {
 }
